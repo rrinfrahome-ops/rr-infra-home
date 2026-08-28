@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Completed Projects | RR Infra Homes</title>
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1"
+        rel="stylesheet"
+    >
+
+    <!-- Tailwind Generated CSS -->
+    <link
+        rel="stylesheet"
+        href="./css/styles.css"
+    >
+</head>
+
+
+<body class="bg-background text-on-surface font-body-md antialiased">
+
+
+    <!-- ==================================================
+         NAVIGATION
+    =================================================== -->
+
+    <header
+        id="main-nav"
+        class="fixed top-0 left-0 z-50 w-full bg-surface/60 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300"
+    >
+
+        <div
+            class="flex items-center justify-between px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+        >
+
+            <!-- Logo -->
+            <a
+                href="./index.html"
+                class="rr-logo"
+                aria-label="RR Infra Homes - Home"
+            >
+                RR Infra Homes
+            </a>
+
+
+            <!-- Desktop Navigation -->
+            <nav
+                class="hidden md:flex items-center gap-8"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="./index.html"
+                    class="nav-link"
+                >
+                    HOME
+                </a>
+
+                <a
+                    href="./about.html"
+                    class="nav-link"
+                >
+                    ABOUT
+                </a>
+
+                <a
+                    href="./services.html"
+                    class="nav-link"
+                >
+                    SERVICES
+                </a>
+
+                <a
+                    href="./projects.html"
+                    class="nav-link text-primary font-bold border-b-2 border-primary pb-1"
+                    aria-current="page"
+                >
+                    PROJECTS
+                </a>
+
+                <a
+                    href="./contact.html"
+                    class="nav-link"
+                >
+                    CONTACT
+                </a>
+
+            </nav>
+
+
+            <!-- Request Quote -->
+            <a
+                href="./contact.html"
+                class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
+            >
+                REQUEST A QUOTE
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+            <button
+                id="mobile-menu-button"
+                type="button"
+                class="md:hidden text-primary p-2"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+
+                <span class="material-symbols-outlined text-3xl">
+                    menu
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <nav
+            id="mobile-menu"
+            class="hidden md:hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
+            aria-label="Mobile navigation"
+        >
+
+            <div class="flex flex-col gap-5">
+
+                <a
+                    href="./index.html"
+                    class="nav-link"
+                >
+                    HOME
+                </a>
+
+                <a
+                    href="./about.html"
+                    class="nav-link"
+                >
+                    ABOUT
+                </a>
+
+                <a
+                    href="./services.html"
+                    class="nav-link"
+                >
+                    SERVICES
+                </a>
+
+                <a
+                    href="./projects.html"
+                    class="nav-link text-primary"
+                    aria-current="page"
+                >
+                    PROJECTS
+                </a>
+
+                <a
+                    href="./contact.html"
+                    class="nav-link"
+                >
+                    CONTACT
+                </a>
+
+                <a
+                    href="./contact.html"
+                    class="inline-block w-fit bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow"
+                >
+                    REQUEST A QUOTE
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+    <main class="pt-32 pb-section-gap">
+
+
+        <!-- ==================================================
+             PROJECT HERO
+        =================================================== -->
+
+        <section
+            class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16"
+        >
+
+            <div class="max-w-3xl">
+
+                <span
+                    class="font-label-caps text-label-caps text-primary tracking-widest uppercase block mb-4"
+                >
+                    OUR PROJECTS
+                </span>
+
+
+                <h1
+                    class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6"
+                >
+                    Completed Projects
+                </h1>
+
+
+                <p
+                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed"
+                >
+                    Explore our completed residential projects and discover
+                    the quality, craftsmanship, and attention to detail we
+                    bring to every home.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             PROJECT GALLERY
+        =================================================== -->
+
+        <section
+            class="projects-gallery px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+            aria-label="Completed projects"
+        >
+
+
+            <!-- =========================
+                 ROW 1
+            ========================== -->
+
+            <div class="gallery-row">
+
+
+                <!-- PROJECT 01 -->
+                <article class="project-card col-66">
+
+                    <img
+                        src="./assets/images/projects/img1.jpg"
+                        alt="Completed residential project by RR Infra Homes"
+                        class="project-image"
+                        loading="eager"
+                        fetchpriority="high"
+                    >
+
+                    <div class="project-overlay"></div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 01
+                        </span>
+
+                        <h2 class="project-title">
+                            Featured Project
+                        </h2>
+
+                        <span class="project-link">
+                            Completed Residence
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECTS 02 + 03 -->
+                <div class="col-34 stacked-col">
+
+
+                    <!-- PROJECT 02 -->
+                    <article class="project-card">
+
+                        <img
+                            src="./assets/images/projects/img2.jpg"
+                            alt="Residential project by RR Infra Homes"
+                            class="project-image"
+                            loading="lazy"
+                        >
+
+                        <div class="project-overlay"></div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                PROJECT 02
+                            </span>
+
+                            <h2 class="project-title small">
+                                Residential Project
+                            </h2>
+
+                            <span class="project-link">
+                                View Project
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 03 -->
+                    <article class="project-card">
+
+                        <img
+                            src="./assets/images/projects/img3.jpg"
+                            alt="Custom home built by RR Infra Homes"
+                            class="project-image"
+                            loading="lazy"
+                        >
+
+                        <div class="project-overlay"></div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                PROJECT 03
+                            </span>
+
+                            <h2 class="project-title small">
+                                Custom Home
+                            </h2>
+
+                            <span class="project-link">
+                                View Project
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 ROW 2
+            ========================== -->
+
+            <div class="gallery-row">
+
+
+                <!-- PROJECT 04 -->
+                <article class="project-card col-33">
+
+                    <img
+                        src="./assets/images/projects/img4.jpg"
+                        alt="Completed residence by RR Infra Homes"
+                        class="project-image"
+                        loading="lazy"
+                    >
+
+                    <div class="project-overlay"></div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 04
+                        </span>
+
+                        <h2 class="project-title small">
+                            Completed Residence
+                        </h2>
+
+                        <span class="project-link">
+                            View Project
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 05 -->
+                <article class="project-card col-67">
+
+                    <img
+                        src="./assets/images/projects/img5.jpg"
+                        alt="Modern residence by RR Infra Homes"
+                        class="project-image"
+                        loading="lazy"
+                    >
+
+                    <div class="project-overlay"></div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 05
+                        </span>
+
+                        <h2 class="project-title">
+                            Modern Residence
+                        </h2>
+
+                        <span class="project-link">
+                            View Project
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =========================
+                 ROW 3
+            ========================== -->
+
+            <div class="gallery-row">
+
+
+                <!-- PROJECT 06 -->
+                <article class="project-card col-33">
+
+                    <img
+                        src="./assets/images/projects/img6.jpg"
+                        alt="Residential project by RR Infra Homes"
+                        class="project-image"
+                        loading="lazy"
+                    >
+
+                    <div class="project-overlay"></div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 06
+                        </span>
+
+                        <h2 class="project-title small">
+                            Residential Project
+                        </h2>
+
+                        <span class="project-link">
+                            View Project
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 07 -->
+                <article class="project-card col-67">
+
+                    <img
+                        src="./assets/images/projects/img7.jpg"
+                        alt="Custom home by RR Infra Homes"
+                        class="project-image"
+                        loading="lazy"
+                    >
+
+                    <div class="project-overlay"></div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 07
+                        </span>
+
+                        <h2 class="project-title">
+                            Custom Home
+                        </h2>
+
+                        <span class="project-link">
+                            View Project
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =========================
+                 ROW 4
+            ========================== -->
+
+            <div class="gallery-row">
+
+
+                <!-- PROJECT 08 -->
+                <article class="project-card col-67">
+
+                    <img
+                        src="./assets/images/projects/img8.jpg"
+                        alt="Completed residence by RR Infra Homes"
+                        class="project-image"
+                        loading="lazy"
+                    >
+
+                    <div class="project-overlay"></div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 08
+                        </span>
+
+                        <h2 class="project-title">
+                            Completed Residence
+                        </h2>
+
+                        <span class="project-link">
+                            View Project
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 09 -->
+                <article class="project-card col-33">
+
+                    <img
+                        src="./assets/images/projects/img9.jpg"
+                        alt="Modern residence by RR Infra Homes"
+                        class="project-image"
+                        loading="lazy"
+                    >
+
+                    <div class="project-overlay"></div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 09
+                        </span>
+
+                        <h2 class="project-title small">
+                            Modern Residence
+                        </h2>
+
+                        <span class="project-link">
+                            View Project
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CTA
+        =================================================== -->
+
+        <section
+            class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-section-gap"
+        >
+
+            <div
+                class="bg-surface-container-high rounded-xl p-8 md:p-12 border border-outline-variant/20 max-w-4xl mx-auto flex flex-col items-center text-center"
+            >
+
+                <h2
+                    class="font-headline-xl text-headline-xl text-on-surface mb-4"
+                >
+                    Have a Project In Mind?
+                </h2>
+
+
+                <p
+                    class="text-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg"
+                >
+                    Let's discuss your vision and turn it into a home built
+                    to last.
+                </p>
+
+
+                <a
+                    href="./contact.html"
+                    class="bg-gradient-to-br from-primary to-primary-container text-on-primary-container px-8 py-4 rounded-lg hover:scale-95 transition-transform tracking-widest uppercase font-bold"
+                >
+                    GET A QUOTE
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer
+        class="bg-surface-container-lowest w-full rounded-t-xl border-t border-outline-variant mt-section-gap"
+    >
+
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap"
+        >
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-gutter"
+            >
+
+
+                <!-- Brand -->
+                <div class="flex flex-col gap-6">
+
+                    <div class="rr-logo">
+                        RR Infra Homes
+                    </div>
+
+                    <p class="text-on-surface-variant leading-relaxed max-w-xs">
+                        Precision in Craftsmanship. Building quality spaces
+                        with trust, excellence, and attention to detail.
+                    </p>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="flex flex-col gap-6">
+
+                    <h3 class="footer-heading">
+                        QUICK LINKS
+                    </h3>
+
+                    <nav class="flex flex-col gap-4">
+
+                        <a
+                            href="./index.html"
+                            class="footer-link"
+                        >
+                            Home
+                        </a>
+
+                        <a
+                            href="./about.html"
+                            class="footer-link"
+                        >
+                            About
+                        </a>
+
+                        <a
+                            href="./services.html"
+                            class="footer-link"
+                        >
+                            Services
+                        </a>
+
+                        <a
+                            href="./projects.html"
+                            class="footer-link text-primary"
+                        >
+                            Projects
+                        </a>
+
+                        <a
+                            href="./contact.html"
+                            class="footer-link"
+                        >
+                            Contact
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- Legal -->
+                <div class="flex flex-col gap-6">
+
+                    <h3 class="footer-heading">
+                        LEGAL
+                    </h3>
+
+                    <nav class="flex flex-col gap-4">
+
+                        <a href="#" class="footer-link">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#" class="footer-link">
+                            Terms of Service
+                        </a>
+
+                        <a href="#" class="footer-link">
+                            Cookie Policy
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="flex flex-col gap-6">
+
+                    <h3 class="footer-heading">
+                        CONTACT
+                    </h3>
+
+                    <div class="flex flex-col gap-4">
+
+                        <a
+                            href="mailto:rrinfrahome@gmail.com"
+                            class="footer-link"
+                        >
+                            rrinfrahome@gmail.com
+                        </a>
+
+                        <a
+                            href="tel:+918344466686"
+                            class="footer-link"
+                        >
+                            +91 83444 66686
+                        </a>
+
+                        <p class="leading-relaxed text-on-surface">
+                            105 Jaikarannagar, Mullainagar,<br>
+                            Podanur Post, Coimbatore-641023
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Copyright -->
+            <div
+                class="mt-16 pt-8 border-t border-outline-variant/20 text-center"
+            >
+
+                <p class="text-on-surface-variant">
+                    © 2026 RR Infra Homes. Precision in Craftsmanship.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

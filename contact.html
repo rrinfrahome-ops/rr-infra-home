@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | RR Infra Homes</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Tailwind Generated CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+
+
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+
+    <header
+        id="main-nav"
+        class="fixed top-0 z-50 w-full bg-surface/60 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_20px_50px_rgba(253,182,151,0.1)] transition-all duration-300"
+    >
+
+        <div
+            class="flex items-center justify-between px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+        >
+
+            <!-- Logo -->
+            <a
+    href="./index.html"
+    class="rr-logo"
+    aria-label="RR Infra Homes - Home"
+>
+    RR Infra Homes
+</a>
+
+
+            <!-- Desktop Navigation -->
+            <nav
+                class="hidden md:flex items-center gap-8"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="./index.html"
+                    class="nav-link"
+                >
+                    HOME
+                </a>
+
+                <a
+                    href="./about.html"
+                    class="nav-link"
+                >
+                    ABOUT
+                </a>
+
+                <a
+                    href="./services.html"
+                    class="nav-link"
+                >
+                    SERVICES
+                </a>
+
+                <a
+                    href="./projects.html"
+                    class="nav-link"
+                >
+                    PROJECTS
+                </a>
+
+                <a
+    href="./contact.html"
+    class="nav-link text-primary font-bold border-b-2 border-primary pb-1"
+    aria-current="page"
+>
+    CONTACT
+</a>
+
+
+            </nav>
+
+
+            <!-- Request Quote -->
+            <a
+                href="./contact.html"
+                class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
+            >
+                REQUEST A QUOTE
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+            <button
+    id="mobile-menu-button"
+    type="button"
+    class="md:hidden text-primary p-2"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu">
+
+                <span class="material-symbols-outlined text-3xl">
+                    menu
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <nav
+            id="mobile-menu"
+            class="hidden md:hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
+            aria-label="Mobile navigation"
+        >
+
+            <div class="flex flex-col gap-5">
+
+                <a
+                    href="./index.html"
+                    class="nav-link"
+                >
+                    HOME
+                </a>
+
+                <a
+                    href="./about.html"
+                    class="nav-link"
+                >
+                    ABOUT
+                </a>
+
+                <a
+                    href="./services.html"
+                    class="nav-link"
+                >
+                    SERVICES
+                </a>
+
+                <a
+                    href="./projects.html"
+                    class="nav-link"
+                >
+                    PROJECTS
+                </a>
+
+                <a
+    href="./contact.html"
+    class="nav-link text-primary"
+    aria-current="page"
+>
+    CONTACT
+</a>
+
+
+                <a
+                    href="./contact.html"
+                    class="inline-block w-fit bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow"
+                >
+                    REQUEST A QUOTE
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ========================================= -->
+
+    <main class="flex-grow pt-24">
+
+
+        <!-- ========================================
+             CONTACT HERO
+        ========================================= -->
+
+        <section
+            class="relative px-margin-mobile md:px-margin-desktop py-section-gap md:py-32 bg-surface overflow-hidden border-b border-surface-container-high"
+        >
+
+            <!-- Background Pattern -->
+            <div
+                class="absolute inset-0 opacity-10 pointer-events-none"
+                style="
+                    background-image: radial-gradient(#53433c 1px, transparent 1px);
+                    background-size: 24px 24px;
+                "
+            ></div>
+
+
+            <!-- Background Gradient -->
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-background/80 to-background"
+            ></div>
+
+
+            <!-- Hero Content -->
+            <div
+                class="relative z-10 max-w-3xl mx-auto text-center"
+            >
+
+                <h1
+                    class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-6"
+                >
+
+                    Request Your
+
+                    <span class="gradient-text">
+                        Free Construction Quote
+                    </span>
+
+                </h1>
+
+
+                <p
+                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
+                >
+                    Share your project details and our experts will provide
+                    a customized estimate tailored to your unique
+                    architectural vision.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             CONTACT INFORMATION
+        ========================================= -->
+
+        <section
+            class="px-margin-mobile md:px-margin-desktop py-section-gap md:py-32 relative"
+        >
+
+            <div
+                class="max-w-4xl mx-auto"
+            >
+
+
+                <!-- ========================================
+                     DIRECT CONTACT
+                ========================================= -->
+
+                <div>
+
+                    <h2
+                        class="font-headline-lg text-headline-lg text-on-surface mb-6 pb-4 border-b border-surface-container-high text-center"
+                    >
+                        Direct Contact
+                    </h2>
+
+
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+                    >
+
+
+                        <!-- Office -->
+                        <div
+                            class="flex flex-col items-center text-center gap-4"
+                        >
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/50"
+                            >
+
+                                <span class="material-symbols-outlined text-primary">
+                                    location_on
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <p
+                                    class="font-label-caps text-label-caps text-primary mb-2 uppercase"
+                                >
+                                    Office
+                                </p>
+
+                                <p
+                                    class="text-on-surface-variant"
+                                >
+                                    105 Jaikarannagar, Mullainagar,
+                                    Podanur Post, Coimbatore-641023
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Phone -->
+                        <div
+                            class="flex flex-col items-center text-center gap-4"
+                        >
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/50"
+                            >
+
+                                <span class="material-symbols-outlined text-primary">
+                                    phone_in_talk
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <p
+                                    class="font-label-caps text-label-caps text-primary mb-2 uppercase"
+                                >
+                                    Phone
+                                </p>
+
+                                <a
+                                    href="tel:+918344466686"
+                                    class="text-on-surface-variant hover:text-primary transition-colors"
+                                >
+                                    +91 83444 66686
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div
+                            class="flex flex-col items-center text-center gap-4"
+                        >
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/50"
+                            >
+
+                                <span class="material-symbols-outlined text-primary">
+                                    mail
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <p
+                                    class="font-label-caps text-label-caps text-primary mb-2 uppercase"
+                                >
+                                    Email
+                                </p>
+
+                                <a
+                                    href="mailto:rrinfrahome@gmail.com"
+                                    class="text-on-surface-variant hover:text-primary transition-colors break-all"
+                                >
+                                    rrinfrahome@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Hours -->
+                        <div
+                            class="flex flex-col items-center text-center gap-4"
+                        >
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/50"
+                            >
+
+                                <span class="material-symbols-outlined text-primary">
+                                    schedule
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <p
+                                    class="font-label-caps text-label-caps text-primary mb-2 uppercase"
+                                >
+                                    Hours
+                                </p>
+
+                                <p
+                                    class="text-on-surface-variant"
+                                >
+                                    Mon-Fri: 9:00 AM - 6:00 PM
+                                    <br>
+                                    Sat-Sun: By Appointment
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
+                     TRUST CARDS
+                ========================================= -->
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-24 pt-24 border-t border-surface-container-high"
+                >
+
+
+                    <!-- Experienced Builders -->
+                    <div
+                        class="bg-surface-container-high border border-outline-variant/50 p-10 rounded-xl flex flex-col items-center text-center gap-4 hover:scale-[1.02] hover:border-primary/50 transition-all duration-300"
+                    >
+
+                        <span
+                            class="material-symbols-outlined text-secondary text-3xl"
+                        >
+                            architecture
+                        </span>
+
+
+                        <div>
+
+                            <h3
+                                class="font-headline-lg text-on-surface text-xl font-bold mb-2"
+                            >
+                                Experienced Builders
+                            </h3>
+
+                            <p
+                                class="text-sm text-on-surface-variant"
+                            >
+                                Years of dedicated craftsmanship and
+                                construction experience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quality Materials -->
+                    <div
+                        class="bg-surface-container-high border border-outline-variant/50 p-10 rounded-xl flex flex-col items-center text-center gap-4 hover:scale-[1.02] hover:border-primary/50 transition-all duration-300"
+                    >
+
+                        <span
+                            class="material-symbols-outlined text-secondary text-3xl"
+                        >
+                            diamond
+                        </span>
+
+
+                        <div>
+
+                            <h3
+                                class="font-headline-lg text-on-surface text-xl font-bold mb-2"
+                            >
+                                Quality Materials
+                            </h3>
+
+                            <p
+                                class="text-sm text-on-surface-variant"
+                            >
+                                Quality materials selected carefully for
+                                lasting strength and value.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Transparent Process -->
+                    <div
+                        class="bg-surface-container-high border border-outline-variant/50 p-10 rounded-xl flex flex-col items-center text-center gap-4 hover:scale-[1.02] hover:border-primary/50 transition-all duration-300"
+                    >
+
+                        <span
+                            class="material-symbols-outlined text-secondary text-3xl"
+                        >
+                            handshake
+                        </span>
+
+
+                        <div>
+
+                            <h3
+                                class="font-headline-lg text-on-surface text-xl font-bold mb-2"
+                            >
+                                Transparent Process
+                            </h3>
+
+                            <p
+                                class="text-sm text-on-surface-variant"
+                            >
+                                Clear communication and honest service
+                                throughout every stage.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer
+        class="w-full mt-section-gap bg-surface-container-lowest rounded-t-xl border-t border-outline-variant"
+    >
+
+        <div
+            class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+        >
+
+
+            <!-- Brand -->
+            <div class="space-y-6">
+
+                <div
+                    class="font-headline-lg text-headline-lg font-bold text-primary"
+                >
+                    RR Infra Homes
+                </div>
+
+
+                <p
+                    class="text-on-surface-variant text-body-md leading-relaxed"
+                >
+                    Precision in Craftsmanship. Building quality spaces
+                    with trust, excellence, and attention to detail.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="flex flex-col gap-4">
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Quick Links
+                </h4>
+
+
+                <a
+                    href="./index.html"
+                    class="footer-link"
+                >
+                    Home
+                </a>
+
+
+                <a
+                    href="./about.html"
+                    class="footer-link"
+                >
+                    About
+                </a>
+
+
+                <a
+                    href="./services.html"
+                    class="footer-link"
+                >
+                    Services
+                </a>
+
+
+                <a
+                    href="./projects.html"
+                    class="footer-link"
+                >
+                    Projects
+                </a>
+
+
+                <a
+                    href="./contact.html"
+                    class="footer-link text-primary"
+                >
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Legal -->
+            <div class="flex flex-col gap-4">
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Legal
+                </h4>
+
+
+                <a
+                    href="#"
+                    class="footer-link"
+                >
+                    Privacy Policy
+                </a>
+
+
+                <a
+                    href="#"
+                    class="footer-link"
+                >
+                    Terms of Service
+                </a>
+
+
+                <a
+                    href="#"
+                    class="footer-link"
+                >
+                    Cookie Policy
+                </a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="flex flex-col gap-4">
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Contact
+                </h4>
+
+
+                <a
+                    href="mailto:rrinfrahome@gmail.com"
+                    class="footer-link"
+                >
+                    rrinfrahome@gmail.com
+                </a>
+
+
+                <a
+                    href="tel:+918344466686"
+                    class="footer-link"
+                >
+                    +91 83444 66686
+                </a>
+
+
+                <p
+                    class="text-on-surface-variant font-body-md"
+                >
+                    105 Jaikarannagar, Mullainagar,
+                    Podanur Post, Coimbatore-641023
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div
+            class="border-t border-outline-variant/30 py-6 text-center"
+        >
+
+            <p
+                class="text-on-surface-variant font-body-md opacity-80"
+            >
+                © 2026 RR Infra Homes. Precision in Craftsmanship.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

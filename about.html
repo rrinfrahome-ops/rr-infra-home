@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | RR Infra Homes</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Manrope:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Tailwind Generated CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden">
+
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+
+    <header
+    id="main-nav"
+    class="fixed top-0 z-50 w-full bg-surface/60 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_20px_50px_rgba(253,182,151,0.1)] transition-all duration-300"
+>
+
+    <div
+        class="flex items-center justify-between px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+    >
+
+        <!-- Logo -->
+        <a
+            href="./index.html"
+            class="rr-logo"
+            aria-label="RR Infra Homes - Home"
+        >
+            RR Infra Homes
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav
+            class="hidden md:flex items-center gap-8"
+            aria-label="Main navigation"
+        >
+
+            <a href="./index.html" class="nav-link">
+                HOME
+            </a>
+
+            <a
+                href="./about.html"
+                class="nav-link text-primary border-b-2 border-primary pb-1"
+                aria-current="page"
+            >
+                ABOUT
+            </a>
+
+            <a href="./services.html" class="nav-link">
+                SERVICES
+            </a>
+
+            <a href="./projects.html" class="nav-link">
+                PROJECTS
+            </a>
+
+            <a href="./contact.html" class="nav-link">
+                CONTACT
+            </a>
+
+        </nav>
+
+        <!-- Quote Button -->
+        <a
+            href="./contact.html"
+            class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
+        >
+            REQUEST A QUOTE
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+            id="mobile-menu-button"
+            type="button"
+            class="md:hidden text-primary"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+        >
+            <span class="material-symbols-outlined text-3xl">
+                menu
+            </span>
+        </button>
+
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
+        aria-label="Mobile navigation"
+    >
+
+        <div class="flex flex-col gap-5">
+
+            <a href="./index.html" class="nav-link">
+                HOME
+            </a>
+
+            <a
+                href="./about.html"
+                class="nav-link text-primary"
+                aria-current="page"
+            >
+                ABOUT
+            </a>
+
+            <a href="./services.html" class="nav-link">
+                SERVICES
+            </a>
+
+            <a href="./projects.html" class="nav-link">
+                PROJECTS
+            </a>
+
+            <a href="./contact.html" class="nav-link">
+                CONTACT
+            </a>
+
+            <a
+                href="./contact.html"
+                class="inline-block w-fit bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow"
+            >
+                REQUEST A QUOTE
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+    <!-- ========================================
+         MAIN CONTENT
+    ========================================= -->
+
+    <main class="flex-grow pt-24">
+
+
+        <!-- ========================================
+             ABOUT HERO
+        ========================================= -->
+
+        <section
+            class="relative px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto min-h-[80vh] flex items-center"
+        >
+
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center w-full relative z-10"
+            >
+
+                <!-- Hero Text -->
+                <div class="space-y-8">
+
+                    <div
+                        class="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20"
+                    >
+
+                        <div
+                            class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                        ></div>
+
+                        <span
+                            class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
+                        >
+                            Our Heritage
+                        </span>
+
+                    </div>
+
+
+                    <h1
+                            class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface break-words"
+
+                    >
+                        Architecting
+                        <br>
+                        <span class="text-primary italic">
+                            Excellence.
+                        </span>
+                    </h1>
+
+
+                    <p
+                        class="font-body-lg text-body-lg text-on-surface-variant max-w-xl"
+                    >
+                        For over six years, RR Infra Homes has redefined
+                        quality living through uncompromising craftsmanship,
+                        visionary design, and a steadfast commitment to
+                        structural integrity. We don't just build houses;
+                        we create enduring spaces.
+                    </p>
+
+
+                    <div class="pt-4">
+
+                        <a
+                            href="#our-story"
+                            class="inline-block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded-xl metallic-glow hover:opacity-90 transition-opacity"
+                        >
+                            EXPLORE OUR STORY
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Image -->
+                <div
+                    class="relative h-[500px] md:h-[600px] w-full rounded-2xl overflow-hidden border border-outline-variant/30 luxury-shadow"
+                >
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent z-10"
+                    ></div>
+
+                    <img
+                        src="./assets/images/hero-villa.jpg"
+                        alt="Modern luxury home"
+                        class="w-full h-full object-cover grayscale-[30%] contrast-125"
+                    >
+
+                    <!-- Decorative Glow -->
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full blur-3xl"
+                    ></div>
+
+                    <div
+                        class="absolute bottom-0 left-0 w-48 h-48 bg-tertiary/10 rounded-tr-full blur-3xl"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Background Accent -->
+            <div
+    class="absolute top-1/4 left-0 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-primary/5 rounded-full blur-[120px] -z-10 pointer-events-none"
+></div>
+
+
+
+        </section>
+
+
+        <!-- ========================================
+             OUR STORY
+        ========================================= -->
+
+        <section
+            id="our-story"
+            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+        >
+
+            <div
+    class="lg:col-span-6 lg:col-start-7 space-y-8 order-1 lg:order-2"
+>
+
+
+                <!-- Image -->
+                <div
+                    class="lg:col-span-5 relative order-2 lg:order-1 mt-12 lg:mt-0"
+                >
+
+                    <div
+                        class="bg-surface-container rounded-3xl p-6 md:p-8 border border-outline-variant/50 luxury-shadow relative z-10"
+                    >
+
+                        <div class="relative group overflow-hidden rounded-xl">
+
+                            <img
+                                src="./assets/images/founder.jpg"
+                                alt="RR Infra Homes founder"
+                                class="w-full h-auto min-h-[400px] rounded-xl object-cover transition-transform duration-500 group-hover:scale-105"
+                            >
+
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-4 bg-surface-dim/80 backdrop-blur-md border-t border-primary/20"
+                            >
+
+                                <p
+                                    class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
+                                >
+                                    Founder
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Experience Badge -->
+                        <div
+    class="absolute -bottom-4 right-2 md:-bottom-6 md:-right-6 bg-surface-container-high border border-primary/30 p-4 md:p-6 rounded-2xl shadow-xl backdrop-blur-md"
+>
+
+
+                            <p
+                                class="font-display-lg text-headline-xl text-primary mb-1"
+                            >
+                                6+
+                            </p>
+
+                            <p
+                                class="font-label-caps text-label-caps text-on-surface-variant"
+                            >
+                                Years of Experience
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Story Content -->
+                <div
+                    class="lg:col-span-6 lg:col-start-7 space-y-8 order-1 lg:order-2"
+                >
+
+                    <h2
+                        class="font-headline-lg text-headline-lg md:text-headline-xl text-on-surface"
+                    >
+                        The Foundation of
+                        <br>
+                        Our Legacy
+                    </h2>
+
+
+                    <p
+                        class="font-body-lg text-body-lg text-on-surface-variant"
+                    >
+                        Born from a vision to transcend the ordinary,
+                        RR Infra Homes was established on the principles
+                        of material honesty and intelligent design.
+                        We source quality materials and work with skilled
+                        professionals to ensure every detail reflects
+                        our standards.
+                    </p>
+
+
+                    <p
+                        class="font-body-lg text-body-lg text-on-surface-variant"
+                    >
+                        Our journey is defined by the spaces we create —
+                        comfortable, functional, and lasting environments
+                        designed to provide breathing room in a busy world.
+                    </p>
+
+
+                    <div class="pt-6">
+
+                        <a
+                            href="./contact.html"
+                            class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:text-tertiary transition-colors uppercase tracking-wider group"
+                        >
+                            TALK TO OUR TEAM
+
+                            <span
+                                class="material-symbols-outlined transition-transform group-hover:translate-x-1"
+                            >
+                                arrow_forward
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             MISSION & VISION
+        ========================================= -->
+
+        <section
+            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto relative"
+        >
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-gutter relative z-10"
+            >
+
+                <!-- Mission -->
+                <div
+                    class="bg-surface-container-high border border-outline-variant/30 rounded-3xl p-8 md:p-12 hover:border-primary/50 transition-colors duration-500 group relative overflow-hidden"
+                >
+
+                    <div
+                        class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-bl-full blur-3xl"
+                    ></div>
+
+
+                    <div
+                        class="w-16 h-16 bg-surface-container rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                    >
+
+                        <span class="material-symbols-outlined text-headline-lg">
+                            architecture
+                        </span>
+
+                    </div>
+
+
+                    <h3
+                        class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                    >
+                        Our Mission
+                    </h3>
+
+
+                    <p
+                        class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed relative z-10"
+                    >
+                        To deliver high-quality construction that seamlessly
+                        blends form, function, and comfort. We are dedicated
+                        to elevating the standard of living through meticulous
+                        craftsmanship, responsible practices, and unwavering
+                        commitment in every project we undertake.
+                    </p>
+
+                </div>
+
+
+                <!-- Vision -->
+                <div
+                    class="bg-surface-container-high border border-outline-variant/30 rounded-3xl p-8 md:p-12 hover:border-primary/50 transition-colors duration-500 group relative overflow-hidden md:mt-12"
+                >
+
+                    <div
+                        class="absolute bottom-0 left-0 w-64 h-64 bg-tertiary/5 rounded-tr-full blur-3xl"
+                    ></div>
+
+
+                    <div
+                        class="w-16 h-16 bg-surface-container rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                    >
+
+                        <span class="material-symbols-outlined text-headline-lg">
+                            visibility
+                        </span>
+
+                    </div>
+
+
+                    <h3
+                        class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                    >
+                        Our Vision
+                    </h3>
+
+
+                    <p
+                        class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed relative z-10"
+                    >
+                        To become a trusted name in construction and
+                        infrastructure, recognized for quality workmanship,
+                        thoughtful design, innovation, and lasting value
+                        across the architectural landscape.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             RR INFRA STANDARD
+        ========================================= -->
+
+        <section
+            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+        >
+
+            <!-- Heading -->
+            <div class="text-center mb-16 space-y-4">
+
+                <h2
+                    class="font-headline-xl text-headline-xl text-on-surface"
+                >
+                    The RR Infra Standard
+                </h2>
+
+                <p
+                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
+                >
+                    The principles that uphold our commitment to quality
+                    construction and customer satisfaction.
+                </p>
+
+            </div>
+
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-gutter"
+            >
+
+                <!-- Quality -->
+                <div
+                    class="bg-surface-container border border-outline-variant/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 md:col-span-2 md:row-span-2 relative overflow-hidden group"
+                >
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent"
+                    ></div>
+
+
+                    <div class="relative z-10 flex flex-col h-full justify-between">
+
+                        <div
+                            class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary mb-6 bg-surface-dim/80"
+                        >
+
+                            <span class="material-symbols-outlined">
+                                diamond
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <h4
+                                class="font-headline-lg text-headline-lg text-on-surface mb-2"
+                            >
+                                Uncompromising Quality
+                            </h4>
+
+                            <p
+                                class="font-body-md text-body-md text-on-surface-variant max-w-md"
+                            >
+                                From foundational elements to the final
+                                finishing touches, we focus on quality
+                                materials, skilled workmanship, and
+                                attention to detail.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Trust -->
+                <div
+                    class="bg-surface-container border border-outline-variant/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300"
+                >
+
+                    <div
+                        class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary mb-6"
+                    >
+
+                        <span class="material-symbols-outlined">
+                            handshake
+                        </span>
+
+                    </div>
+
+
+                    <h4
+                        class="font-headline-lg text-headline-lg text-on-surface mb-2"
+                    >
+                        Absolute Trust
+                    </h4>
+
+
+                    <p
+                        class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                        Transparent communication and honest service ensure
+                        our clients feel secure and valued throughout every
+                        stage of their project.
+                    </p>
+
+                </div>
+
+
+                <!-- Innovation -->
+                <div
+                    class="bg-surface-container border border-outline-variant/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300"
+                >
+
+                    <div
+                        class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary mb-6"
+                    >
+
+                        <span class="material-symbols-outlined">
+                            lightbulb
+                        </span>
+
+                    </div>
+
+
+                    <h4
+                        class="font-headline-lg text-headline-lg text-on-surface mb-2"
+                    >
+                        Smart Innovation
+                    </h4>
+
+
+                    <p
+                        class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                        Practical and modern construction solutions designed
+                        to maximize comfort, functionality, efficiency,
+                        and long-term value.
+                    </p>
+
+                </div>
+
+
+                <!-- Track Record -->
+                <div
+                    class="bg-surface-container border border-outline-variant/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 md:col-span-3 flex flex-col md:flex-row items-center justify-between gap-8"
+                >
+
+                    <div class="flex-1 space-y-4">
+
+                        <div
+                            class="inline-flex items-center gap-2 text-primary font-label-caps text-label-caps uppercase tracking-wider"
+                        >
+
+                            <span class="material-symbols-outlined text-body-md">
+                                military_tech
+                            </span>
+
+                            Excellence Recognized
+
+                        </div>
+
+
+                        <h4
+                            class="font-headline-lg text-headline-lg text-on-surface"
+                        >
+                            Proven Track Record
+                        </h4>
+
+
+                        <p
+                            class="font-body-md text-body-md text-on-surface-variant max-w-2xl"
+                        >
+                            Delivering residential and commercial projects
+                            with a focus on quality, timely execution,
+                            transparency, and client satisfaction.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Statistics -->
+                    <<!-- Statistics -->
+<div class="flex flex-wrap justify-center gap-3 md:gap-4 w-full md:w-auto">
+
+    <!-- Projects -->
+    <div
+        class="bg-surface-container-high px-4 md:px-6 py-4 rounded-xl border border-outline-variant/10 text-center min-w-[110px]"
+    >
+
+        <span
+            class="block font-headline-xl text-headline-xl text-primary"
+        >
+            10+
+        </span>
+
+        <span
+            class="font-label-caps text-label-caps text-on-surface-variant"
+        >
+            Projects
+        </span>
+
+    </div>
+
+
+    <!-- Client Focus -->
+    <div
+        class="bg-surface-container-high px-4 md:px-6 py-4 rounded-xl border border-outline-variant/10 text-center min-w-[110px]"
+    >
+
+        <span
+            class="block font-headline-xl text-headline-xl text-primary"
+        >
+            100%
+        </span>
+
+        <span
+            class="font-label-caps text-label-caps text-on-surface-variant"
+        >
+            Client Focus
+        </span>
+
+    </div>
+
+</div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             CTA
+        ========================================= -->
+
+        <section
+            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+        >
+
+            <div
+                class="bg-surface-container-high rounded-3xl p-10 md:p-24 border border-outline-variant/20 text-center relative overflow-hidden luxury-shadow"
+            >
+
+                <!-- Background Glow -->
+                <div
+                    class="absolute inset-0 flex items-center justify-center pointer-events-none"
+                >
+
+                    <div
+                        class="w-full h-full max-w-2xl bg-primary/10 rounded-full blur-[100px]"
+                    ></div>
+
+                </div>
+
+
+                <div
+                    class="relative z-10 space-y-8 max-w-2xl mx-auto"
+                >
+
+                    <h2
+    class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface break-words"
+>
+    Ready to Build Your Legacy?
+</h2>
+
+
+
+                    <p
+                        class="font-body-lg text-body-lg text-on-surface-variant"
+                    >
+                        Connect with our team to discuss your next
+                        construction project. We are ready to turn your
+                        vision into reality.
+                    </p>
+
+
+                    <div class="pt-4">
+
+                        <a
+                            href="./contact.html"
+                            class="inline-block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-10 py-5 rounded-xl metallic-glow hover:opacity-90 transition-opacity"
+                        >
+                            START THE CONVERSATION
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer
+        class="w-full mt-section-gap bg-surface-container-lowest rounded-t-xl border-t border-outline-variant"
+    >
+
+        <div
+            class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+        >
+
+            <!-- Brand -->
+            <div class="space-y-6">
+
+                <div
+                    class="font-headline-lg text-headline-lg font-bold text-primary"
+                >
+                    RR Infra Homes
+                </div>
+
+                <p
+                    class="text-on-surface-variant text-body-md leading-relaxed"
+                >
+                    Precision in Craftsmanship. Building quality spaces
+                    with trust, excellence, and attention to detail.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="flex flex-col gap-4">
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Quick Links
+                </h4>
+
+                <a href="./index.html" class="footer-link">
+                    Home
+                </a>
+
+                <a href="./about.html" class="footer-link text-primary">
+                    About
+                </a>
+
+                <a href="./services.html" class="footer-link">
+                    Services
+                </a>
+
+                <a href="./projects.html" class="footer-link">
+                    Projects
+                </a>
+
+                <a href="./contact.html" class="footer-link">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Legal -->
+            <div class="flex flex-col gap-4">
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Legal
+                </h4>
+
+                <a href="#" class="footer-link">
+                    Privacy Policy
+                </a>
+
+                <a href="#" class="footer-link">
+                    Terms of Service
+                </a>
+
+                <a href="#" class="footer-link">
+                    Cookie Policy
+                </a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="flex flex-col gap-4">
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Contact
+                </h4>
+
+                <a
+                    href="mailto:rrinfrahome@gmail.com"
+                    class="footer-link"
+                >
+                    rrinfrahome@gmail.com
+                </a>
+
+                <a
+                    href="tel:+918344466686"
+                    class="footer-link"
+                >
+                    +91 83444 66686
+                </a>
+
+                <p class="text-on-surface-variant font-body-md">
+                    105 Jaikarannagar, Mullainagar,
+                    Podanur Post, Coimbatore-641023
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div
+            class="border-t border-outline-variant/30 py-6 text-center"
+        >
+
+            <p
+                class="text-on-surface-variant font-body-md opacity-80"
+            >
+                © 2026 RR Infra Homes. Precision in Craftsmanship.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

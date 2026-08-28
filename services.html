@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Construction Services | RR Infra Homes</title>
+
+    <meta
+        name="description"
+        content="RR Infra Homes provides residential and commercial construction, renovation, structural design, painting, electrical and plumbing services across Coimbatore."
+    >
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Manrope:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Tailwind Generated CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+
+    <header
+        id="main-nav"
+        class="fixed top-0 z-50 w-full bg-surface/60 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_20px_50px_rgba(253,182,151,0.1)] transition-all duration-300"
+    >
+
+        <div
+            class="flex items-center justify-between px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+        >
+
+            <!-- Logo -->
+            <a
+                href="./index.html"
+                class="rr-logo"
+                aria-label="RR Infra Homes - Home"
+            >
+                RR Infra Homes
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav
+                class="hidden md:flex items-center gap-8"
+                aria-label="Main navigation"
+            >
+
+                <a href="./index.html" class="nav-link">
+                    HOME
+                </a>
+
+                <a href="./about.html" class="nav-link">
+                    ABOUT
+                </a>
+
+                <a
+                    href="./services.html"
+                    class="nav-link text-primary border-b-2 border-primary pb-1"
+                    aria-current="page"
+                >
+                    SERVICES
+                </a>
+
+                <a href="./projects.html" class="nav-link">
+                    PROJECTS
+                </a>
+
+                <a href="./contact.html" class="nav-link">
+                    CONTACT
+                </a>
+
+            </nav>
+
+            <!-- Quote Button -->
+            <a
+                href="./contact.html"
+                class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
+            >
+                REQUEST A QUOTE
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+                id="mobile-menu-button"
+                type="button"
+                class="md:hidden text-primary"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+                <span class="material-symbols-outlined text-3xl">
+                    menu
+                </span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav
+            id="mobile-menu"
+            class="hidden md:hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
+            aria-label="Mobile navigation"
+        >
+
+            <div class="flex flex-col gap-5">
+
+                <a href="./index.html" class="nav-link">
+                    HOME
+                </a>
+
+                <a href="./about.html" class="nav-link">
+                    ABOUT
+                </a>
+
+                <a
+                    href="./services.html"
+                    class="nav-link text-primary"
+                    aria-current="page"
+                >
+                    SERVICES
+                </a>
+
+                <a href="./projects.html" class="nav-link">
+                    PROJECTS
+                </a>
+
+                <a href="./contact.html" class="nav-link">
+                    CONTACT
+                </a>
+
+                <a
+                    href="./contact.html"
+                    class="inline-block w-fit bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow"
+                >
+                    REQUEST A QUOTE
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ========================================= -->
+
+    <main class="flex-grow pt-24">
+
+
+        <!-- ========================================
+             SERVICES LIST
+        ========================================= -->
+
+        <section
+            id="services-list"
+            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+        >
+
+            <!-- Section Heading -->
+            <div class="text-center mb-16 space-y-4">
+
+                <span
+                    class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
+                >
+                    What We Offer
+                </span>
+
+                <h2
+                    class="font-headline-xl text-headline-xl text-on-surface"
+                >
+                    Complete Construction Solutions
+                </h2>
+
+                <p
+                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
+                >
+                    Every project is approached with the same commitment to
+                    quality, functionality, and long-term value.
+                </p>
+
+            </div>
+
+
+            <!-- Services Grid -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
+            >
+
+                <!-- Residential -->
+                <article
+                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                >
+
+                    <div
+                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                    ></div>
+
+                    <div class="relative z-10">
+
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                        >
+                            <span class="material-symbols-outlined text-headline-lg">
+                                home_work
+                            </span>
+                        </div>
+
+                        <h3
+                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                        >
+                            Residential Construction
+                        </h3>
+
+                        <p
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                        >
+                            From independent homes and villas to duplexes,
+                            we create comfortable and functional residential
+                            spaces designed around your lifestyle.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Commercial -->
+                <article
+                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                >
+
+                    <div
+                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                    ></div>
+
+                    <div class="relative z-10">
+
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                        >
+                            <span class="material-symbols-outlined text-headline-lg">
+                                business
+                            </span>
+                        </div>
+
+                        <h3
+                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                        >
+                            Commercial Construction
+                        </h3>
+
+                        <p
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                        >
+                            Practical and durable commercial spaces built
+                            to support business operations, functionality,
+                            and long-term performance.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Renovation -->
+                <article
+                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                >
+
+                    <div
+                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                    ></div>
+
+                    <div class="relative z-10">
+
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                        >
+                            <span class="material-symbols-outlined text-headline-lg">
+                                construction
+                            </span>
+                        </div>
+
+                        <h3
+                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                        >
+                            Renovation &amp; Remodeling
+                        </h3>
+
+                        <p
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                        >
+                            Transforming existing spaces through thoughtful
+                            upgrades, structural improvements, modern finishes,
+                            and practical remodeling solutions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Structural Design -->
+                <article
+                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                >
+
+                    <div
+                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                    ></div>
+
+                    <div class="relative z-10">
+
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                        >
+                            <span class="material-symbols-outlined text-headline-lg">
+                                architecture
+                            </span>
+                        </div>
+
+                        <h3
+                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                        >
+                            Structural Design
+                        </h3>
+
+                        <p
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                        >
+                            Careful planning and structural solutions focused
+                            on safety, stability, functionality, and reliable
+                            execution throughout the project.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Painting -->
+                <article
+                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                >
+
+                    <div
+                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                    ></div>
+
+                    <div class="relative z-10">
+
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                        >
+                            <span class="material-symbols-outlined text-headline-lg">
+                                format_paint
+                            </span>
+                        </div>
+
+                        <h3
+                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                        >
+                            Painting &amp; Finishing
+                        </h3>
+
+                        <p
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                        >
+                            Interior and exterior painting and finishing
+                            solutions that complete your space with a clean,
+                            durable, and refined appearance.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Electrical & Plumbing -->
+                <article
+                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                >
+
+                    <div
+                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                    ></div>
+
+                    <div class="relative z-10">
+
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                        >
+                            <span class="material-symbols-outlined text-headline-lg">
+                                electrical_services
+                            </span>
+                        </div>
+
+                        <h3
+                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                        >
+                            Electrical &amp; Plumbing
+                        </h3>
+
+                        <p
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                        >
+                            Essential electrical and plumbing installations
+                            planned and executed to support safe, practical,
+                            and dependable buildings.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             HOW WE WORK
+        ========================================= -->
+
+        <section
+            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+        >
+
+            <div class="text-center mb-16 space-y-4">
+
+                <span
+                    class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
+                >
+                    Our Process
+                </span>
+
+                <h2
+                    class="font-headline-xl text-headline-xl text-on-surface"
+                >
+                    From Vision to Reality
+                </h2>
+
+                <p
+                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
+                >
+                    A straightforward approach that keeps your project
+                    organized, transparent, and focused from the first
+                    conversation to completion.
+                </p>
+
+            </div>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter"
+            >
+
+                <!-- Step 1 -->
+                <div
+                    class="relative bg-surface-container border border-outline-variant/20 rounded-2xl p-8"
+                >
+
+                    <span
+                        class="font-headline-xl text-headline-xl text-primary opacity-30"
+                    >
+                        01
+                    </span>
+
+                    <div
+                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-6 mb-6"
+                    >
+                        <span class="material-symbols-outlined">
+                            forum
+                        </span>
+                    </div>
+
+                    <h3
+                        class="font-headline-lg text-headline-lg text-on-surface mb-3"
+                    >
+                        Consultation
+                    </h3>
+
+                    <p
+                        class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                        We understand your requirements, budget, goals,
+                        and expectations before planning the project.
+                    </p>
+
+                </div>
+
+
+                <!-- Step 2 -->
+                <div
+                    class="relative bg-surface-container border border-outline-variant/20 rounded-2xl p-8"
+                >
+
+                    <span
+                        class="font-headline-xl text-headline-xl text-primary opacity-30"
+                    >
+                        02
+                    </span>
+
+                    <div
+                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-6 mb-6"
+                    >
+                        <span class="material-symbols-outlined">
+                            edit_document
+                        </span>
+                    </div>
+
+                    <h3
+                        class="font-headline-lg text-headline-lg text-on-surface mb-3"
+                    >
+                        Planning &amp; Design
+                    </h3>
+
+                    <p
+                        class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                        Requirements are translated into a clear plan
+                        covering design, materials, execution, and scope.
+                    </p>
+
+                </div>
+
+
+                <!-- Step 3 -->
+                <div
+                    class="relative bg-surface-container border border-outline-variant/20 rounded-2xl p-8"
+                >
+
+                    <span
+                        class="font-headline-xl text-headline-xl text-primary opacity-30"
+                    >
+                        03
+                    </span>
+
+                    <div
+                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-6 mb-6"
+                    >
+                        <span class="material-symbols-outlined">
+                            engineering
+                        </span>
+                    </div>
+
+                    <h3
+                        class="font-headline-lg text-headline-lg text-on-surface mb-3"
+                    >
+                        Construction
+                    </h3>
+
+                    <p
+                        class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                        Skilled execution, quality materials, and attention
+                        to detail bring the planned project to life.
+                    </p>
+
+                </div>
+
+
+                <!-- Step 4 -->
+                <div
+                    class="relative bg-surface-container border border-outline-variant/20 rounded-2xl p-8"
+                >
+
+                    <span
+                        class="font-headline-xl text-headline-xl text-primary opacity-30"
+                    >
+                        04
+                    </span>
+
+                    <div
+                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-6 mb-6"
+                    >
+                        <span class="material-symbols-outlined">
+                            task_alt
+                        </span>
+                    </div>
+
+                    <h3
+                        class="font-headline-lg text-headline-lg text-on-surface mb-3"
+                    >
+                        Handover
+                    </h3>
+
+                    <p
+                        class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                        We complete the final details and hand over a
+                        finished space ready for you to use and enjoy.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             WHY RR INFRA HOMES
+        ========================================= -->
+
+        <section
+            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+        >
+
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center"
+            >
+
+                <!-- Content -->
+                <div class="space-y-8">
+
+                    <div class="space-y-4">
+
+                        <span
+                            class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
+                        >
+                            Why RR Infra Homes
+                        </span>
+
+                        <h2
+                            class="font-headline-xl text-headline-xl text-on-surface"
+                        >
+                            Built Around Quality.
+                            <br>
+                            <span class="text-primary italic">
+                                Driven By Trust.
+                            </span>
+                        </h2>
+
+                    </div>
+
+                    <p
+                        class="font-body-lg text-body-lg text-on-surface-variant"
+                    >
+                        Every project we undertake is guided by the same
+                        principles that define RR Infra Homes: quality
+                        workmanship, honest communication, thoughtful
+                        planning, and lasting value.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+
+                        <!-- Quality -->
+                        <div class="flex gap-4">
+
+                            <div
+                                class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary"
+                            >
+                                <span class="material-symbols-outlined">
+                                    diamond
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <h3
+                                    class="font-headline-lg text-on-surface mb-1"
+                                >
+                                    Quality Materials
+                                </h3>
+
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant"
+                                >
+                                    Materials selected with durability and
+                                    long-term performance in mind.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Workmanship -->
+                        <div class="flex gap-4">
+
+                            <div
+                                class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary"
+                            >
+                                <span class="material-symbols-outlined">
+                                    handyman
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <h3
+                                    class="font-headline-lg text-on-surface mb-1"
+                                >
+                                    Skilled Workmanship
+                                </h3>
+
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant"
+                                >
+                                    Careful execution with attention to
+                                    details that matter.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Transparency -->
+                        <div class="flex gap-4">
+
+                            <div
+                                class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary"
+                            >
+                                <span class="material-symbols-outlined">
+                                    handshake
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <h3
+                                    class="font-headline-lg text-on-surface mb-1"
+                                >
+                                    Transparent Communication
+                                </h3>
+
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant"
+                                >
+                                    Clear communication throughout the
+                                    project journey.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Execution -->
+                        <div class="flex gap-4">
+
+                            <div
+                                class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary"
+                            >
+                                <span class="material-symbols-outlined">
+                                    schedule
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <h3
+                                    class="font-headline-lg text-on-surface mb-1"
+                                >
+                                    Focused Execution
+                                </h3>
+
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant"
+                                >
+                                    Organized execution with attention to
+                                    quality and project requirements.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+        <!-- Visual Panel -->
+<div
+    class="relative bg-surface-container-high border border-outline-variant/30 rounded-3xl p-8 md:p-12 overflow-hidden min-h-[650px] flex flex-col items-center justify-center"
+>
+
+    <!-- Ambient Copper Glow -->
+    <div
+        class="absolute -top-20 -right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none"
+    ></div>
+
+    <div
+        class="absolute -bottom-20 -left-20 w-72 h-72 bg-tertiary/10 rounded-full blur-3xl pointer-events-none"
+    ></div>
+
+
+    <!-- Rotating Logo -->
+    <div
+        class="relative w-[280px] h-[280px] md:w-[360px] md:h-[360px] flex items-center justify-center mb-10"
+    >
+
+        <!-- Outer Ring -->
+        <div
+            class="absolute inset-0 rounded-full border border-primary/20 rr-logo-ring-slow"
+        ></div>
+
+        <!-- Dashed Ring -->
+        <div
+            class="absolute inset-[12%] rounded-full border border-primary/30 border-dashed rr-logo-ring-reverse"
+        ></div>
+
+        <!-- Inner Ring -->
+        <div
+            class="absolute inset-[23%] rounded-full border border-primary/10 rr-logo-ring-slow-fast"
+        ></div>
+
+        <!-- Logo Glow -->
+        <div
+            class="absolute w-[60%] h-[60%] rounded-full bg-primary/10 blur-3xl"
+        ></div>
+
+        <!-- Main Logo -->
+        <div
+    class="relative w-44 h-44 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-surface shadow-[0_0_80px_rgba(203,125,88,0.25)] z-10 group"
+>
+    <img
+        src="./assets/images/rr-infra-logo.webp"
+        alt="RR Infra Homes Logo"
+        class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
+    >
+
+    <div
+        class="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent pointer-events-none"
+    ></div>
+</div>
+
+
+    </div>
+
+
+    <!-- Text Content -->
+    <div
+        class="relative z-10 text-center max-w-xl"
+    >
+
+        <h3
+            class="font-display-lg-mobile text-display-lg-mobile text-on-surface mb-6"
+        >
+            Every Detail
+            <br>
+            <span class="text-primary">
+                Matters.
+            </span>
+        </h3>
+
+        <p
+            class="font-body-lg text-body-lg text-on-surface-variant"
+        >
+            Good construction is more than putting materials
+            together. It is about planning carefully, building
+            responsibly, and creating spaces that remain useful
+            and valuable for years to come.
+        </p>
+
+        <div
+            class="mt-8 pt-6 border-t border-outline-variant/30"
+        >
+
+            <div
+                class="flex items-center justify-center gap-3"
+            >
+
+                <span
+                    class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                ></span>
+
+                <span
+                    class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
+                >
+                    Precision in Craftsmanship
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             CTA
+        ========================================= -->
+
+        <section
+            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+        >
+
+            <div
+                class="bg-surface-container-high rounded-3xl p-10 md:p-24 border border-outline-variant/20 text-center relative overflow-hidden luxury-shadow"
+            >
+
+                <!-- Background Glow -->
+                <div
+                    class="absolute inset-0 flex items-center justify-center pointer-events-none"
+                >
+
+                    <div
+                        class="w-full h-full max-w-2xl bg-primary/10 rounded-full blur-[100px]"
+                    ></div>
+
+                </div>
+
+                <div
+                    class="relative z-10 space-y-8 max-w-2xl mx-auto"
+                >
+
+                    <span
+                        class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
+                    >
+                        Let's Build Together
+                    </span>
+
+                    <h2
+                        class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface"
+                    >
+                        Ready to Build
+                        <br>
+                        Your Future?
+                    </h2>
+
+                    <p
+                        class="font-body-lg text-body-lg text-on-surface-variant"
+                    >
+                        Tell us about your project and let's discuss how
+                        RR Infra Homes can turn your vision into reality.
+                    </p>
+
+                    <div class="pt-4">
+
+                        <a
+                            href="./contact.html"
+                            class="inline-block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-10 py-5 rounded-xl metallic-glow hover:opacity-90 transition-opacity"
+                        >
+                            START THE CONVERSATION
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer
+        class="w-full mt-section-gap bg-surface-container-lowest rounded-t-xl border-t border-outline-variant"
+    >
+
+        <div
+            class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+        >
+
+            <!-- Brand -->
+            <div class="space-y-6">
+
+                <div
+                    class="font-headline-lg text-headline-lg font-bold text-primary"
+                >
+                    RR Infra Homes
+                </div>
+
+                <p
+                    class="text-on-surface-variant text-body-md leading-relaxed"
+                >
+                    Precision in Craftsmanship. Building quality spaces
+                    with trust, excellence, and attention to detail.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="flex flex-col gap-4">
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Quick Links
+                </h4>
+
+                <a href="./index.html" class="footer-link">
+                    Home
+                </a>
+
+                <a href="./about.html" class="footer-link">
+                    About
+                </a>
+
+                <a
+                    href="./services.html"
+                    class="footer-link text-primary"
+                >
+                    Services
+                </a>
+
+                <a href="./projects.html" class="footer-link">
+                    Projects
+                </a>
+
+                <a href="./contact.html" class="footer-link">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Legal -->
+            <div class="flex flex-col gap-4">
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Legal
+                </h4>
+
+                <a href="#" class="footer-link">
+                    Privacy Policy
+                </a>
+
+                <a href="#" class="footer-link">
+                    Terms of Service
+                </a>
+
+                <a href="#" class="footer-link">
+                    Cookie Policy
+                </a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="flex flex-col gap-4">
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Contact
+                </h4>
+
+                <a
+                    href="mailto:rrinfrahome@gmail.com"
+                    class="footer-link"
+                >
+                    rrinfrahome@gmail.com
+                </a>
+
+                <a
+                    href="tel:+918344466686"
+                    class="footer-link"
+                >
+                    +91 83444 66686
+                </a>
+
+                <p
+                    class="text-on-surface-variant font-body-md"
+                >
+                    105 Jaikarannagar, Mullainagar,
+                    Podanur Post, Coimbatore-641023
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div
+            class="border-t border-outline-variant/30 py-6 text-center"
+        >
+
+            <p
+                class="text-on-surface-variant font-body-md opacity-80"
+            >
+                © 2026 RR Infra Homes. Precision in Craftsmanship.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

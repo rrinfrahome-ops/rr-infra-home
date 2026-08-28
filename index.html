@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RR Infra Homes - Precision in Craftsmanship</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Manrope:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Tailwind generated CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+
+    <!-- Navigation -->
+    <!-- ================================
+     NAVIGATION
+================================= -->
+<header
+    id="main-nav"
+    class="fixed top-0 z-50 w-full bg-surface/60 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_20px_50px_rgba(253,182,151,0.1)] transition-all duration-300"
+>
+    <div
+        class="flex items-center justify-between px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+    >
+
+        <!-- Logo -->
+        <a
+    href="./index.html"
+    class="rr-logo"
+    aria-label="RR Infra Homes - Home"
+>
+    RR Infra Homes
+</a>
+
+        <!-- Desktop Navigation -->
+        <nav
+            class="hidden md:flex items-center gap-8"
+            aria-label="Main navigation"
+        >
+            <a href="#" class="nav-link">HOME</a>
+            <a href="./about.html" class="nav-link">ABOUT</a>
+            <a href="./services.html" class="nav-link">SERVICES</a>
+            <a href="#" class="nav-link">PROJECTS</a>
+            <a href="./contact.html" class="nav-link">CONTACT</a>
+        </nav>
+
+        <!-- Quote Button -->
+        <button
+            type="button"
+            class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
+        >
+            Request a Quote
+        </button>
+
+                <!-- Mobile Menu Button -->
+        <button
+            id="mobile-menu-button"
+            type="button"
+            class="md:hidden text-primary"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+        >
+            <span class="material-symbols-outlined text-3xl">
+                menu
+            </span>
+        </button>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+    <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
+        aria-label="Mobile navigation"
+    >
+
+        <div class="flex flex-col gap-5">
+
+            <a
+                href="./index.html"
+                class="nav-link text-primary"
+                aria-current="page"
+            >
+                HOME
+            </a>
+
+            <a
+                href="./about.html"
+                class="nav-link"
+            >
+                ABOUT
+            </a>
+
+            <a
+                href="./services.html"
+                class="nav-link"
+            >
+                SERVICES
+            </a>
+
+            <a
+                href="./projects.html"
+                class="nav-link"
+            >
+                PROJECTS
+            </a>
+
+            <a
+                href="./contact.html"
+                class="nav-link"
+            >
+                CONTACT
+            </a>
+
+            <a
+                href="./contact.html"
+                class="inline-block w-fit bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow"
+            >
+                REQUEST A QUOTE
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+    <!-- ================================
+     MAIN CONTENT
+================================= -->
+<main class="flex-grow">
+
+    <!-- Hero Section -->
+    <section
+        id="hero"
+        class="relative min-h-screen flex items-center pt-24 overflow-hidden"
+    >
+
+        <!-- Hero Background -->
+        <div class="absolute inset-0 z-0">
+
+            <div class="absolute inset-0 w-full h-full bg-cover bg-center hero-background"></div>
+
+            <div class="absolute inset-0 hero-overlay"></div>
+
+        </div>
+
+
+        <!-- Hero Content -->
+        <div
+            class="relative z-10 flex flex-col w-full md:w-2/3 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap"
+        >
+
+            <!-- Eyebrow -->
+            <span
+                class="inline-block mb-4 font-label-caps text-label-caps text-primary tracking-[0.2em] uppercase opacity-90"
+            >
+                RR Infra Homes
+            </span>
+
+
+            <!-- Heading -->
+            <h1
+                class="mb-6 font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface drop-shadow-lg"
+            >
+                Building Quality Spaces With Trust &amp; Excellence
+            </h1>
+
+
+            <!-- Description -->
+            <p
+                class="max-w-2xl mb-10 font-body-lg text-body-lg text-on-surface-variant opacity-90"
+            >
+                Complete construction solutions for residential and commercial
+                buildings across Coimbatore. We turn architectural vision into
+                structural reality with uncompromising precision.
+            </p>
+
+
+            <!-- Hero Actions -->
+            <div class="flex flex-col gap-4 mb-16 sm:flex-row">
+
+                <a
+    href="contact.html"
+    class="bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded-xl metallic-glow hover:opacity-90 transition-opacity inline-block"
+>
+    Get Free Consultation
+</a>
+
+
+                <a
+    href="projects.html"
+    class="border border-outline-variant text-primary font-label-caps text-label-caps px-8 py-4 rounded-xl hover:border-primary hover:bg-primary/5 transition-all inline-block"
+>
+    View Projects
+</a>
+
+
+            </div>
+
+
+            <!-- Trust Badges -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 pt-8 border-t border-outline-variant/30 glass-panel rounded-xl"
+            >
+
+                <!-- Experience -->
+                <div class="flex items-center gap-3">
+
+                    <span
+                        class="material-symbols-outlined text-primary text-3xl"
+                    >
+                        workspace_premium
+                    </span>
+
+                    <span
+                        class="font-label-caps text-label-caps text-on-surface"
+                    >
+                        6+ Years Experience
+                    </span>
+
+                </div>
+
+
+                <!-- Construction Type -->
+                <div class="flex items-center gap-3">
+
+                    <span
+                        class="material-symbols-outlined text-primary text-3xl"
+                    >
+                        architecture
+                    </span>
+
+                    <span
+                        class="font-label-caps text-label-caps text-on-surface"
+                    >
+                        Residential &amp; Commercial
+                    </span>
+
+                </div>
+
+
+                <!-- Location -->
+                <div class="flex items-center gap-3">
+
+                    <span
+                        class="material-symbols-outlined text-primary text-3xl"
+                    >
+                        location_on
+                    </span>
+
+                    <span
+                        class="font-label-caps text-label-caps text-on-surface"
+                    >
+                        Serving All Over Coimbatore
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+    <!-- ================================
+     FOOTER
+================================= -->
+<footer
+    class="w-full mt-section-gap bg-surface-container-lowest rounded-t-xl border-t border-outline-variant"
+>
+    <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+    >
+
+        <!-- Company Information -->
+        <div class="col-span-1 md:col-span-2">
+
+            <div
+                class="mb-4 font-headline-lg text-headline-lg font-bold text-primary"
+            >
+                RR Infra Homes
+            </div>
+
+            <p
+                class="max-w-sm mb-6 font-body-md text-body-md text-on-surface-variant"
+            >
+                Precision in Craftsmanship. Building structures that define
+                the modern landscape of Coimbatore.
+            </p>
+
+            <div
+                class="font-label-caps text-label-caps text-on-surface-variant"
+            >
+                © 2026 RR Infra Homes. Precision in Craftsmanship.
+            </div>
+
+        </div>
+
+
+        <!-- Company Links -->
+<div>
+
+    <h4
+        class="mb-4 font-label-caps text-label-caps text-on-surface uppercase tracking-widest"
+    >
+        Quick Links
+    </h4>
+
+    <ul class="flex flex-col gap-3 font-body-md text-body-md">
+
+        <li>
+            <a href="./index.html" class="footer-link">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="./about.html" class="footer-link">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="./services.html" class="footer-link">
+                Services
+            </a>
+        </li>
+
+        <li>
+            <a href="./projects.html" class="footer-link">
+                Projects
+            </a>
+        </li>
+
+        <li>
+            <a href="./contact.html" class="footer-link">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+
+        <!-- Legal Links -->
+        <div>
+
+            <h4
+                class="mb-4 font-label-caps text-label-caps text-on-surface uppercase tracking-widest"
+            >
+                Legal
+            </h4>
+
+            <ul class="flex flex-col gap-3 font-body-md text-body-md">
+
+                <li>
+                    <a href="./privacy-policy.html" class="footer-link">
+                        Privacy Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./terms.html" class="footer-link">
+                        Terms of Service
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</footer>
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
