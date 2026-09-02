@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Construction Services | RR Infra Homes</title>
 
@@ -12,173 +16,227 @@
         content="RR Infra Homes provides residential and commercial construction, renovation, structural design, painting, electrical and plumbing services across Coimbatore."
     >
 
-    <!-- Google Fonts -->
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Manrope:wght@400;500;600&display=swap"
         rel="stylesheet"
     >
 
-    <!-- Material Symbols -->
+    <!-- =====================================================
+         MATERIAL SYMBOLS
+    ====================================================== -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet"
     >
 
-    <!-- Tailwind Generated CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+    <!-- =====================================================
+         TAILWIND CSS
+    ====================================================== -->
 
-<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
-
-    <!-- ========================================
-         NAVIGATION
-    ========================================= -->
-
-    <header
-        id="main-nav"
-        class="fixed top-0 z-50 w-full bg-surface/60 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_20px_50px_rgba(253,182,151,0.1)] transition-all duration-300"
+    <link
+        rel="stylesheet"
+        href="./css/styles.css"
     >
 
-        <div
-            class="flex items-center justify-between px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
-        >
+</head>
 
-           <a
+
+<body
+    class="antialiased min-h-screen flex flex-col font-body-md text-body-md overflow-x-clip"
+>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header
+    id="main-nav"
+    class="fixed top-0 z-50 w-full bg-surface/60 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_20px_50px_rgba(253,182,151,0.1)] transition-all duration-300"
+>
+
+    <div
+        class="flex items-center justify-between gap-4 px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+    >
+
+        <!-- Brand -->
+        <a
     href="./index.html"
     class="rr-brand"
     aria-label="RR Infra Homes - Home"
 >
     <img
-        src="assets/images/rrlogo.webp"
+        src="./assets/images/rrlogo.webp"
         alt="RR Infra Homes Logo"
     >
+
     <div class="rr-brand-text">
-    <span class="rr-logo">RR</span>
-    <span>INFRA HOMES</span>
-</div>
+        <span class="rr-logo">RR</span>
+        <span class="rr-infra">INFRA</span>
+        <span class="rr-homes">HOMES</span>
+    </div>
 </a>
 
-            <!-- Desktop Navigation -->
-            <nav
-                class="hidden md:flex items-center gap-8"
-                aria-label="Main navigation"
+
+        <!-- Desktop Navigation -->
+        <nav
+            class="hidden md:flex items-center gap-8"
+            aria-label="Main navigation"
+        >
+
+            <a
+                href="./index.html"
+                class="nav-link"
             >
+                HOME
+            </a>
 
-                <a href="./index.html" class="nav-link">
-                    HOME
-                </a>
+            <a
+                href="./about.html"
+                class="nav-link"
+            >
+                ABOUT
+            </a>
 
-                <a href="./about.html" class="nav-link">
-                    ABOUT
-                </a>
+            <a
+                href="./services.html"
+                class="nav-link text-primary border-b-2 border-primary pb-1"
+                aria-current="page"
+            >
+                SERVICES
+            </a>
 
-                <a
-                    href="./services.html"
-                    class="nav-link text-primary border-b-2 border-primary pb-1"
-                    aria-current="page"
-                >
-                    SERVICES
-                </a>
+            <a
+                href="./projects.html"
+                class="nav-link"
+            >
+                PROJECTS
+            </a>
 
-                <a href="./projects.html" class="nav-link">
-                    PROJECTS
-                </a>
-
-                <a href="./contact.html" class="nav-link">
-                    CONTACT
-                </a>
-
-            </nav>
-
-            <!-- Quote Button -->
             <a
                 href="./contact.html"
-                class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
+                class="nav-link"
+            >
+                CONTACT
+            </a>
+
+        </nav>
+
+
+        <!-- Quote Button -->
+        <a
+            href="./contact.html"
+            class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
+        >
+            REQUEST A QUOTE
+        </a>
+
+
+        <!-- Mobile Menu Button -->
+        <button
+            id="mobile-menu-button"
+            type="button"
+            class="md:hidden text-primary"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+        >
+            <span class="material-symbols-outlined text-3xl">
+                menu
+            </span>
+        </button>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+    <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
+        aria-label="Mobile navigation"
+    >
+
+        <div class="flex flex-col gap-5">
+
+            <a
+                href="./index.html"
+                class="nav-link"
+            >
+                HOME
+            </a>
+
+            <a
+                href="./about.html"
+                class="nav-link"
+            >
+                ABOUT
+            </a>
+
+            <a
+                href="./services.html"
+                class="nav-link text-primary"
+                aria-current="page"
+            >
+                SERVICES
+            </a>
+
+            <a
+                href="./projects.html"
+                class="nav-link"
+            >
+                PROJECTS
+            </a>
+
+            <a
+                href="./contact.html"
+                class="nav-link"
+            >
+                CONTACT
+            </a>
+
+            <a
+                href="./contact.html"
+                class="inline-block w-fit bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow"
             >
                 REQUEST A QUOTE
             </a>
 
-            <!-- Mobile Menu Button -->
-            <button
-                id="mobile-menu-button"
-                type="button"
-                class="md:hidden text-primary"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="mobile-menu"
-            >
-                <span class="material-symbols-outlined text-3xl">
-                    menu
-                </span>
-            </button>
-
         </div>
 
-        <!-- Mobile Navigation -->
-        <nav
-            id="mobile-menu"
-            class="hidden md:hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
-            aria-label="Mobile navigation"
-        >
+    </nav>
 
-            <div class="flex flex-col gap-5">
-
-                <a href="./index.html" class="nav-link">
-                    HOME
-                </a>
-
-                <a href="./about.html" class="nav-link">
-                    ABOUT
-                </a>
-
-                <a
-                    href="./services.html"
-                    class="nav-link text-primary"
-                    aria-current="page"
-                >
-                    SERVICES
-                </a>
-
-                <a href="./projects.html" class="nav-link">
-                    PROJECTS
-                </a>
-
-                <a href="./contact.html" class="nav-link">
-                    CONTACT
-                </a>
-
-                <a
-                    href="./contact.html"
-                    class="inline-block w-fit bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow"
-                >
-                    REQUEST A QUOTE
-                </a>
-
-            </div>
-
-        </nav>
-
-    </header>
+</header>
 
 
-    <!-- ========================================
-         MAIN CONTENT
-    ========================================= -->
-
-    <main class="flex-grow pt-24">
 
 
-        <!-- ========================================
-             SERVICES LIST
-        ========================================= -->
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main
+        class="flex-grow min-w-0 w-full max-w-full overflow-x-clip pt-24"
+    >
+
+
+        <!-- =================================================
+             SERVICES
+        ================================================== -->
 
         <section
             id="services-list"
-            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+            class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24 min-w-0"
         >
 
-            <!-- Section Heading -->
-            <div class="text-center mb-16 space-y-4">
+            <!-- Heading -->
+            <div
+                class="w-full max-w-3xl mx-auto text-center mb-10 md:mb-14 space-y-4 min-w-0"
+            >
 
                 <span
                     class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
@@ -187,13 +245,13 @@
                 </span>
 
                 <h2
-                    class="font-headline-xl text-headline-xl text-on-surface"
+                    class="font-headline-xl text-headline-xl text-on-surface break-words"
                 >
                     Complete Construction Solutions
                 </h2>
 
                 <p
-                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
+                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto break-words"
                 >
                     Every project is approached with the same commitment to
                     quality, functionality, and long-term value.
@@ -204,36 +262,38 @@
 
             <!-- Services Grid -->
             <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
+                class="w-full min-w-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-7"
             >
 
-                <!-- Residential -->
+                <!-- Service 01 -->
                 <article
-                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                    class="min-w-0 w-full max-w-full bg-surface-container border border-outline-variant/20 rounded-3xl p-6 md:p-7 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
                 >
 
                     <div
-                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                        class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full blur-2xl pointer-events-none"
                     ></div>
 
-                    <div class="relative z-10">
+                    <div class="relative z-10 min-w-0">
 
                         <div
-                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                            class="w-16 h-16 md:w-[68px] md:h-[68px] bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-6 text-primary group-hover:scale-110 transition-transform duration-500 shrink-0"
                         >
-                            <span class="material-symbols-outlined text-headline-lg">
+
+                            <span class="material-symbols-outlined text-3xl">
                                 home_work
                             </span>
+
                         </div>
 
                         <h3
-                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                            class="font-headline-lg text-headline-lg text-on-surface mb-3 break-words"
                         >
                             Residential Construction
                         </h3>
 
                         <p
-                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed break-words"
                         >
                             From independent homes and villas to duplexes,
                             we create comfortable and functional residential
@@ -245,33 +305,35 @@
                 </article>
 
 
-                <!-- Commercial -->
+                <!-- Service 02 -->
                 <article
-                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                    class="min-w-0 w-full max-w-full bg-surface-container border border-outline-variant/20 rounded-3xl p-6 md:p-7 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
                 >
 
                     <div
-                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                        class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full blur-2xl pointer-events-none"
                     ></div>
 
-                    <div class="relative z-10">
+                    <div class="relative z-10 min-w-0">
 
                         <div
-                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                            class="w-16 h-16 md:w-[68px] md:h-[68px] bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-6 text-primary group-hover:scale-110 transition-transform duration-500 shrink-0"
                         >
-                            <span class="material-symbols-outlined text-headline-lg">
+
+                            <span class="material-symbols-outlined text-3xl">
                                 business
                             </span>
+
                         </div>
 
                         <h3
-                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                            class="font-headline-lg text-headline-lg text-on-surface mb-3 break-words"
                         >
                             Commercial Construction
                         </h3>
 
                         <p
-                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed break-words"
                         >
                             Practical and durable commercial spaces built
                             to support business operations, functionality,
@@ -283,33 +345,35 @@
                 </article>
 
 
-                <!-- Renovation -->
+                <!-- Service 03 -->
                 <article
-                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                    class="min-w-0 w-full max-w-full bg-surface-container border border-outline-variant/20 rounded-3xl p-6 md:p-7 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
                 >
 
                     <div
-                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                        class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full blur-2xl pointer-events-none"
                     ></div>
 
-                    <div class="relative z-10">
+                    <div class="relative z-10 min-w-0">
 
                         <div
-                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                            class="w-16 h-16 md:w-[68px] md:h-[68px] bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-6 text-primary group-hover:scale-110 transition-transform duration-500 shrink-0"
                         >
-                            <span class="material-symbols-outlined text-headline-lg">
+
+                            <span class="material-symbols-outlined text-3xl">
                                 construction
                             </span>
+
                         </div>
 
                         <h3
-                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                            class="font-headline-lg text-headline-lg text-on-surface mb-3 break-words"
                         >
                             Renovation &amp; Remodeling
                         </h3>
 
                         <p
-                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed break-words"
                         >
                             Transforming existing spaces through thoughtful
                             upgrades, structural improvements, modern finishes,
@@ -321,33 +385,35 @@
                 </article>
 
 
-                <!-- Structural Design -->
+                <!-- Service 04 -->
                 <article
-                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                    class="min-w-0 w-full max-w-full bg-surface-container border border-outline-variant/20 rounded-3xl p-6 md:p-7 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
                 >
 
                     <div
-                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                        class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full blur-2xl pointer-events-none"
                     ></div>
 
-                    <div class="relative z-10">
+                    <div class="relative z-10 min-w-0">
 
                         <div
-                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                            class="w-16 h-16 md:w-[68px] md:h-[68px] bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-6 text-primary group-hover:scale-110 transition-transform duration-500 shrink-0"
                         >
-                            <span class="material-symbols-outlined text-headline-lg">
+
+                            <span class="material-symbols-outlined text-3xl">
                                 architecture
                             </span>
+
                         </div>
 
                         <h3
-                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                            class="font-headline-lg text-headline-lg text-on-surface mb-3 break-words"
                         >
                             Structural Design
                         </h3>
 
                         <p
-                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed break-words"
                         >
                             Careful planning and structural solutions focused
                             on safety, stability, functionality, and reliable
@@ -359,33 +425,35 @@
                 </article>
 
 
-                <!-- Painting -->
+                <!-- Service 05 -->
                 <article
-                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                    class="min-w-0 w-full max-w-full bg-surface-container border border-outline-variant/20 rounded-3xl p-6 md:p-7 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
                 >
 
                     <div
-                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                        class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full blur-2xl pointer-events-none"
                     ></div>
 
-                    <div class="relative z-10">
+                    <div class="relative z-10 min-w-0">
 
                         <div
-                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                            class="w-16 h-16 md:w-[68px] md:h-[68px] bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-6 text-primary group-hover:scale-110 transition-transform duration-500 shrink-0"
                         >
-                            <span class="material-symbols-outlined text-headline-lg">
+
+                            <span class="material-symbols-outlined text-4xl">
                                 format_paint
                             </span>
+
                         </div>
 
                         <h3
-                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                            class="font-headline-lg text-headline-lg text-on-surface mb-3 break-words"
                         >
                             Painting &amp; Finishing
                         </h3>
 
                         <p
-                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed break-words"
                         >
                             Interior and exterior painting and finishing
                             solutions that complete your space with a clean,
@@ -397,33 +465,35 @@
                 </article>
 
 
-                <!-- Electrical & Plumbing -->
+                <!-- Service 06 -->
                 <article
-                    class="bg-surface-container border border-outline-variant/20 rounded-3xl p-8 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                    class="min-w-0 w-full max-w-full bg-surface-container border border-outline-variant/20 rounded-3xl p-6 md:p-7 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
                 >
 
                     <div
-                        class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-full blur-2xl"
+                        class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full blur-2xl pointer-events-none"
                     ></div>
 
-                    <div class="relative z-10">
+                    <div class="relative z-10 min-w-0">
 
                         <div
-                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-8 text-primary group-hover:scale-110 transition-transform duration-500"
+                            class="w-16 h-16 md:w-[68px] md:h-[68px] bg-surface-container-high rounded-2xl flex items-center justify-center border border-outline-variant/50 mb-6 text-primary group-hover:scale-110 transition-transform duration-500 shrink-0"
                         >
-                            <span class="material-symbols-outlined text-headline-lg">
+
+                            <span class="material-symbols-outlined text-3xl">
                                 electrical_services
                             </span>
+
                         </div>
 
                         <h3
-                            class="font-headline-lg text-headline-lg text-on-surface mb-4"
+                            class="font-headline-lg text-headline-lg text-on-surface mb-3 break-words"
                         >
                             Electrical &amp; Plumbing
                         </h3>
 
                         <p
-                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                            class="font-body-md text-body-md text-on-surface-variant leading-relaxed break-words"
                         >
                             Essential electrical and plumbing installations
                             planned and executed to support safe, practical,
@@ -439,15 +509,19 @@
         </section>
 
 
-        <!-- ========================================
+
+        <!-- =====================================================
              HOW WE WORK
-        ========================================= -->
+        ====================================================== -->
 
         <section
-            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+            class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-20 min-w-0"
         >
 
-            <div class="text-center mb-16 space-y-4">
+            <!-- Heading -->
+            <div
+                class="w-full max-w-3xl mx-auto text-center mb-10 md:mb-14 space-y-4 min-w-0"
+            >
 
                 <span
                     class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
@@ -456,13 +530,13 @@
                 </span>
 
                 <h2
-                    class="font-headline-xl text-headline-xl text-on-surface"
+                    class="font-headline-xl text-headline-xl text-on-surface break-words"
                 >
                     From Vision to Reality
                 </h2>
 
                 <p
-                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
+                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto break-words"
                 >
                     A straightforward approach that keeps your project
                     organized, transparent, and focused from the first
@@ -471,13 +545,15 @@
 
             </div>
 
+
+            <!-- Process Grid -->
             <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter"
+                class="w-full min-w-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 lg:gap-7"
             >
 
-                <!-- Step 1 -->
+                <!-- Step 01 -->
                 <div
-                    class="relative bg-surface-container border border-outline-variant/20 rounded-2xl p-8"
+                    class="min-w-0 w-full max-w-full bg-surface-container border border-outline-variant/20 rounded-2xl p-6 md:p-7"
                 >
 
                     <span
@@ -487,21 +563,23 @@
                     </span>
 
                     <div
-                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-6 mb-6"
+                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-5 mb-5"
                     >
+
                         <span class="material-symbols-outlined">
                             forum
                         </span>
+
                     </div>
 
                     <h3
-                        class="font-headline-lg text-headline-lg text-on-surface mb-3"
+                        class="font-headline-lg text-headline-lg text-on-surface mb-3 break-words"
                     >
                         Consultation
                     </h3>
 
                     <p
-                        class="font-body-md text-body-md text-on-surface-variant"
+                        class="font-body-md text-body-md text-on-surface-variant leading-relaxed break-words"
                     >
                         We understand your requirements, budget, goals,
                         and expectations before planning the project.
@@ -510,9 +588,9 @@
                 </div>
 
 
-                <!-- Step 2 -->
+                <!-- Step 02 -->
                 <div
-                    class="relative bg-surface-container border border-outline-variant/20 rounded-2xl p-8"
+                    class="min-w-0 w-full max-w-full bg-surface-container border border-outline-variant/20 rounded-2xl p-6 md:p-7"
                 >
 
                     <span
@@ -522,21 +600,23 @@
                     </span>
 
                     <div
-                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-6 mb-6"
+                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-5 mb-5"
                     >
+
                         <span class="material-symbols-outlined">
                             edit_document
                         </span>
+
                     </div>
 
                     <h3
-                        class="font-headline-lg text-headline-lg text-on-surface mb-3"
+                        class="font-headline-lg text-headline-lg text-on-surface mb-3 break-words"
                     >
                         Planning &amp; Design
                     </h3>
 
                     <p
-                        class="font-body-md text-body-md text-on-surface-variant"
+                        class="font-body-md text-body-md text-on-surface-variant leading-relaxed break-words"
                     >
                         Requirements are translated into a clear plan
                         covering design, materials, execution, and scope.
@@ -545,9 +625,9 @@
                 </div>
 
 
-                <!-- Step 3 -->
+                <!-- Step 03 -->
                 <div
-                    class="relative bg-surface-container border border-outline-variant/20 rounded-2xl p-8"
+                    class="min-w-0 w-full max-w-full bg-surface-container border border-outline-variant/20 rounded-2xl p-6 md:p-7"
                 >
 
                     <span
@@ -557,21 +637,23 @@
                     </span>
 
                     <div
-                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-6 mb-6"
+                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-5 mb-5"
                     >
+
                         <span class="material-symbols-outlined">
                             engineering
                         </span>
+
                     </div>
 
                     <h3
-                        class="font-headline-lg text-headline-lg text-on-surface mb-3"
+                        class="font-headline-lg text-headline-lg text-on-surface mb-3 break-words"
                     >
                         Construction
                     </h3>
 
                     <p
-                        class="font-body-md text-body-md text-on-surface-variant"
+                        class="font-body-md text-body-md text-on-surface-variant leading-relaxed break-words"
                     >
                         Skilled execution, quality materials, and attention
                         to detail bring the planned project to life.
@@ -580,9 +662,9 @@
                 </div>
 
 
-                <!-- Step 4 -->
+                <!-- Step 04 -->
                 <div
-                    class="relative bg-surface-container border border-outline-variant/20 rounded-2xl p-8"
+                    class="min-w-0 w-full max-w-full bg-surface-container border border-outline-variant/20 rounded-2xl p-6 md:p-7"
                 >
 
                     <span
@@ -592,21 +674,23 @@
                     </span>
 
                     <div
-                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-6 mb-6"
+                        class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary mt-5 mb-5"
                     >
+
                         <span class="material-symbols-outlined">
                             task_alt
                         </span>
+
                     </div>
 
                     <h3
-                        class="font-headline-lg text-headline-lg text-on-surface mb-3"
+                        class="font-headline-lg text-headline-lg text-on-surface mb-3 break-words"
                     >
                         Handover
                     </h3>
 
                     <p
-                        class="font-body-md text-body-md text-on-surface-variant"
+                        class="font-body-md text-body-md text-on-surface-variant leading-relaxed break-words"
                     >
                         We complete the final details and hand over a
                         finished space ready for you to use and enjoy.
@@ -619,66 +703,121 @@
         </section>
 
 
-        <!-- ========================================
-             WHY RR INFRA HOMES
-        ========================================= -->
 
-        
-
-
-        <!-- ========================================
-             CTA
-        ========================================= -->
+        <!-- =====================================================
+             CTA SECTION
+        ====================================================== -->
 
         <section
-            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto"
+            class="w-full max-w-container-max mx-auto
+                   px-margin-mobile md:px-margin-desktop
+                   pt-8 md:pt-12
+                   pb-20 md:pb-28
+                   min-w-0"
         >
 
             <div
-                class="bg-surface-container-high rounded-3xl p-10 md:p-24 border border-outline-variant/20 text-center relative overflow-hidden luxury-shadow"
+                class="relative w-full max-w-full
+                       bg-surface-container-high
+                       rounded-3xl
+                       p-8 sm:p-10 md:p-16
+                       border border-outline-variant/20
+                       text-center
+                       overflow-hidden
+                       luxury-shadow"
             >
 
-                <!-- Background Glow -->
+                <!-- Soft Background Glow -->
                 <div
-                    class="absolute inset-0 flex items-center justify-center pointer-events-none"
+                    class="pointer-events-none absolute
+                           left-1/2 top-1/2
+                           -translate-x-1/2 -translate-y-1/2
+                           w-[70%] h-[70%]
+                           max-w-2xl
+                           bg-primary/10
+                           rounded-full
+                           blur-[100px]"
+                ></div>
+
+
+                <!-- CTA Content -->
+                <div
+                    class="relative z-10
+                           max-w-3xl
+                           mx-auto"
                 >
 
-                    <div
-                        class="w-full h-full max-w-2xl bg-primary/10 rounded-full blur-[100px]"
-                    ></div>
-
-                </div>
-
-                <div
-                    class="relative z-10 space-y-8 max-w-2xl mx-auto"
-                >
-
+                    <!-- Label -->
                     <span
-                        class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
+                        class="font-label-caps
+                               text-label-caps
+                               text-primary
+                               tracking-[0.18em]
+                               uppercase
+                               block
+                               mb-4"
                     >
                         Let's Build Together
                     </span>
 
+
+                    <!-- Heading -->
                     <h2
-                        class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface"
+                        class="font-display-lg-mobile
+                               md:font-display-lg
+                               text-display-lg-mobile
+                               md:text-display-lg
+                               text-on-surface
+                               break-words
+                               leading-tight"
                     >
                         Ready to Build
                         <br>
                         Your Future?
                     </h2>
 
+
+                    <!-- Description -->
                     <p
-                        class="font-body-lg text-body-lg text-on-surface-variant"
+                        class="mt-5
+                               font-body-lg
+                               text-body-lg
+                               text-on-surface-variant
+                               max-w-2xl
+                               mx-auto
+                               leading-relaxed
+                               break-words"
                     >
                         Tell us about your project and let's discuss how
                         RR Infra Homes can turn your vision into reality.
                     </p>
 
-                    <div class="pt-4">
+
+                    <!-- Button -->
+                    <div
+                        class="mt-7 md:mt-8"
+                    >
 
                         <a
                             href="./contact.html"
-                            class="inline-block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-10 py-5 rounded-xl metallic-glow hover:opacity-90 transition-opacity"
+                            class="inline-flex
+                                   items-center
+                                   justify-center
+                                   max-w-full
+                                   bg-gradient-to-br
+                                   from-primary
+                                   to-primary-container
+                                   text-on-primary-container
+                                   font-label-caps
+                                   text-label-caps
+                                   px-7 md:px-10
+                                   py-4 md:py-5
+                                   rounded-full
+                                   metallic-glow
+                                   hover:-translate-y-1
+                                   hover:opacity-90
+                                   transition-all
+                                   duration-300"
                         >
                             START THE CONVERSATION
                         </a>
@@ -694,139 +833,244 @@
     </main>
 
 
-    <!-- ========================================
-     FOOTER
-======================================== -->
 
-<footer
-    class="w-full mt-section-gap bg-surface-container-lowest rounded-t-xl border-t border-outline-variant overflow-hidden"
->
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-    <div
-        class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-gutter px-6 sm:px-margin-mobile md:px-margin-desktop py-12 md:py-section-gap max-w-container-max mx-auto"
+    <footer
+        class="w-full
+               bg-surface-container-lowest
+               overflow-hidden"
     >
 
-        <!-- Brand -->
-        <div class="min-w-0 space-y-4 md:space-y-6">
+        <!-- =================================================
+             FOOTER CONTENT
+        ================================================== -->
+
+        <div
+            class="w-full max-w-container-max mx-auto
+                   px-margin-mobile md:px-margin-desktop
+                   pt-12 md:pt-16
+                   pb-10 md:pb-14"
+        >
 
             <div
-                class="font-headline-lg text-headline-lg font-bold text-primary"
+                class="grid grid-cols-1
+                       md:grid-cols-3
+                       gap-10 md:gap-16"
             >
-                RR Infra Homes
+
+                <!-- Brand -->
+                <div
+                    class="min-w-0"
+                >
+
+                    <div
+                        class="font-headline-lg
+                               text-3xl
+                               md:text-4xl
+                               font-bold
+                               tracking-tight
+                               text-primary"
+                    >
+                        RR Infra Homes
+                    </div>
+
+                    <p
+                        class="mt-4
+                               max-w-sm
+                               text-on-surface-variant
+                               text-body-md
+                               leading-relaxed
+                               break-words"
+                    >
+                        Precision in Craftsmanship. Building quality spaces
+                        with trust, excellence, and attention to detail.
+                    </p>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div
+                    class="min-w-0"
+                >
+
+                    <h4
+                        class="mb-5
+                               font-label-caps
+                               text-label-caps
+                               text-primary
+                               uppercase
+                               tracking-[0.15em]"
+                    >
+                        Quick Links
+                    </h4>
+
+
+                    <nav
+                        class="flex flex-col
+                               items-start
+                               gap-3.5"
+                        aria-label="Footer navigation"
+                    >
+
+                        <a
+                            href="./index.html"
+                            class="footer-link
+                                   transition-all
+                                   duration-200
+                                   hover:translate-x-1"
+                        >
+                            Home
+                        </a>
+
+                        <a
+                            href="./about.html"
+                            class="footer-link
+                                   transition-all
+                                   duration-200
+                                   hover:translate-x-1"
+                        >
+                            About
+                        </a>
+
+                        <a
+                            href="./services.html"
+                            class="footer-link
+                                   transition-all
+                                   duration-200
+                                   hover:translate-x-1"
+                        >
+                            Services
+                        </a>
+
+                        <a
+                            href="./projects.html"
+                            class="footer-link
+                                   transition-all
+                                   duration-200
+                                   hover:translate-x-1"
+                        >
+                            Projects
+                        </a>
+
+                        <a
+                            href="./contact.html"
+                            class="footer-link
+                                   transition-all
+                                   duration-200
+                                   hover:translate-x-1"
+                        >
+                            Contact
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div
+                    class="min-w-0"
+                >
+
+                    <h4
+                        class="mb-5
+                               font-label-caps
+                               text-label-caps
+                               text-primary
+                               uppercase
+                               tracking-[0.15em]"
+                    >
+                        Contact
+                    </h4>
+
+
+                    <div
+                        class="flex flex-col gap-3.5"
+                    >
+
+                        <a
+                            href="mailto:rrinfrahome@gmail.com"
+                            class="footer-link break-all"
+                        >
+                            rrinfrahome@gmail.com
+                        </a>
+
+
+                        <a
+                            href="tel:+918344466686"
+                            class="footer-link"
+                        >
+                            +91 83444 66686
+                        </a>
+
+
+                        <p
+                            class="max-w-sm
+                                   text-on-surface-variant
+                                   font-body-md
+                                   leading-relaxed
+                                   break-words"
+                        >
+                            105 Jaikarannagar, Mullainagar,
+                            <br>
+                            Podanur Post, Coimbatore-641023
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <p
-                class="text-on-surface-variant text-body-md leading-relaxed max-w-sm"
-            >
-                Precision in Craftsmanship. Building quality spaces
-                with trust, excellence, and attention to detail.
-            </p>
-
         </div>
 
 
-        <!-- Quick Links -->
-        <div class="min-w-0 flex flex-col gap-3">
+        <!-- =================================================
+             COPYRIGHT
+        ================================================== -->
 
-            <h4
-                class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
-            >
-                Quick Links
-            </h4>
-
-            <a
-                href="./index.html"
-                class="footer-link w-fit"
-            >
-                Home
-            </a>
-
-            <a
-                href="./about.html"
-                class="footer-link w-fit"
-            >
-                About
-            </a>
-
-            <a
-                href="./services.html"
-                class="footer-link text-primary w-fit"
-            >
-                Services
-            </a>
-
-            <a
-                href="./projects.html"
-                class="footer-link w-fit"
-            >
-                Projects
-            </a>
-
-            <a
-                href="./contact.html"
-                class="footer-link w-fit"
-            >
-                Contact
-            </a>
-
-        </div>
-
-
-        <!-- Contact -->
-        <div class="min-w-0 flex flex-col gap-3">
-
-            <h4
-                class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
-            >
-                Contact
-            </h4>
-
-            <a
-                href="mailto:rrinfrahome@gmail.com"
-                class="footer-link break-all max-w-full"
-            >
-                rrinfrahome@gmail.com
-            </a>
-
-            <a
-                href="tel:+918344466686"
-                class="footer-link w-fit"
-            >
-                +91 83444 66686
-            </a>
-
-            <p
-                class="text-on-surface-variant font-body-md leading-relaxed max-w-sm break-words"
-            >
-                105 Jaikarannagar, Mullainagar,
-                Podanur Post, Coimbatore-641023
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- Copyright -->
-    <div
-        class="border-t border-outline-variant/30 px-6 sm:px-margin-mobile md:px-margin-desktop py-5 md:py-6"
-    >
-
-        <p
-            class="text-on-surface-variant font-body-md opacity-80 text-center leading-relaxed break-words"
+        <div
+            class="w-full max-w-container-max mx-auto
+                   px-margin-mobile md:px-margin-desktop"
         >
-            © 2026 RR Infra Homes. Precision in Craftsmanship.
-            All rights reserved.
-        </p>
 
-    </div>
+            <div
+                class="border-t
+                       border-outline-variant/20
+                       py-5
+                       md:py-6"
+            >
 
-</footer>
+                <p
+                    class="text-center
+                           text-sm
+                           leading-relaxed
+                           text-on-surface-variant
+                           opacity-70
+                           break-words"
+                >
+                    © 2026 RR Infra Homes. Precision in Craftsmanship.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 
 
-    <!-- JavaScript -->
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
     <script src="./js/main.js"></script>
 
 </body>
+
 </html>
