@@ -2,35 +2,54 @@
 <html class="dark" lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>RR Infra Homes - Precision in Craftsmanship</title>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        RR Infra Homes - Precision in Craftsmanship
+    </title>
+
 
     <!-- ================================
          GOOGLE FONTS
     ================================= -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Manrope:wght@400;500;600&display=swap"
         rel="stylesheet"
     >
 
+
     <!-- ================================
          MATERIAL SYMBOLS
     ================================= -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet"
     >
 
+
     <!-- ================================
          TAILWIND GENERATED CSS
     ================================= -->
-    <link rel="stylesheet" href="./css/styles.css">
+
+    <link
+        rel="stylesheet"
+        href="./css/styles.css"
+    >
+
 </head>
 
 
-<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<body
+    class="antialiased min-h-screen flex flex-col font-body-md text-body-md"
+>
 
 
     <!-- ========================================
@@ -46,7 +65,11 @@
             class="flex items-center justify-between px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
         >
 
-            <!-- Logo -->
+
+            <!-- ================================
+                 BRAND
+            ================================= -->
+
             <a
                 href="./index.html"
                 class="rr-brand"
@@ -54,17 +77,24 @@
             >
 
                 <img
-                    src="./assets/images/rr-infra-logo.webp"
+                    src="./assets/images/rrlogo.webp"
                     alt="RR Infra Homes Logo"
                 >
 
-                <span class="rr-logo">RR</span>
+                <div class="rr-brand-text">
 
-                <span class="rr-brand-text">
-                    INFRA HOMES
-                </span>
+                    <span class="rr-logo">
+                        RR
+                    </span>
+
+                    <span>
+                        INFRA HOMES
+                    </span>
+
+                </div>
 
             </a>
+
 
 
             <!-- =================================
@@ -115,8 +145,9 @@
             </nav>
 
 
+
             <!-- =================================
-                 REQUEST QUOTE BUTTON
+                 REQUEST QUOTE
             ================================== -->
 
             <a
@@ -125,6 +156,7 @@
             >
                 Request a Quote
             </a>
+
 
 
             <!-- =================================
@@ -136,7 +168,7 @@
                 type="button"
                 class="md:hidden text-primary"
                 aria-label="Open navigation menu"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="mobile-menu"
             >
 
@@ -147,6 +179,7 @@
             </button>
 
         </div>
+
 
 
         <!-- =================================
@@ -217,8 +250,13 @@
         ======================================== -->
 
         <section
-            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto pt-40"
+            class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto pt-16 md:pt-40"
         >
+
+
+            <!-- =================================
+                 MAIN TWO-COLUMN LAYOUT
+            ================================== -->
 
             <div
                 class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center"
@@ -226,13 +264,154 @@
 
 
                 <!-- =================================
-                     LEFT CONTENT
+                     LEFT VISUAL PANEL
+                     MOBILE: FIRST
+                     DESKTOP: LEFT
                 ================================== -->
 
-                <div class="space-y-8">
+                <div
+                    class="relative order-1 lg:order-1 bg-surface-container-high border border-outline-variant/30 rounded-3xl p-6 sm:p-8 md:p-12 overflow-hidden min-h-[420px] sm:min-h-[500px] lg:min-h-[650px] flex flex-col items-center justify-center"
+                >
 
 
-                    <!-- Section Heading -->
+                    <!-- AMBIENT COPPER GLOW -->
+
+                    <div
+                        class="absolute -top-20 -right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none"
+                    ></div>
+
+                    <div
+                        class="absolute -bottom-20 -left-20 w-72 h-72 bg-tertiary/10 rounded-full blur-3xl pointer-events-none"
+                    ></div>
+
+
+
+                    <!-- =================================
+     ROTATING LOGO
+================================== -->
+
+<div
+    class="relative w-full h-[500px] lg:h-[600px] flex items-center justify-center mb-8 sm:mb-10"
+>
+
+    <!-- =================================
+         ORNAMENTAL CIRCLES
+    ================================== -->
+
+    <!-- Outer Rotating Ring -->
+
+    <div
+        class="absolute w-[80%] h-[80%] rounded-full border border-primary/20 animate-[spin_40s_linear_infinite_reverse]"
+    ></div>
+
+
+    <!-- Inner Dashed Rotating Ring -->
+
+    <div
+        class="absolute w-[60%] h-[60%] rounded-full border border-primary/30 border-dashed animate-[spin_40s_linear_infinite_reverse]"
+    ></div>
+
+
+    <!-- =================================
+         MAIN LOGO
+    ================================== -->
+
+    <div
+        class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-surface shadow-[0_0_80px_rgba(203,125,88,0.2)] z-10 group"
+    >
+
+        <img
+            src="./assets/images/rr-infra-logo.webp"
+            alt="RR Infra Homes Logo"
+            class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
+        >
+
+        <div
+            class="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent pointer-events-none"
+        ></div>
+
+    </div>
+
+</div>
+
+
+                    <!-- =================================
+                         VISUAL PANEL TEXT
+                    ================================== -->
+
+                    <div
+                        class="relative z-10 text-center max-w-xl"
+                    >
+
+                        <h3
+                            class="font-display-lg-mobile text-display-lg-mobile text-on-surface mb-6"
+                        >
+
+                            Every Detail
+
+                            <br>
+
+                            <span class="text-primary">
+                                Matters.
+                            </span>
+
+                        </h3>
+
+
+                        <p
+                            class="font-body-lg text-body-lg text-on-surface-variant"
+                        >
+                            Good construction is more than putting materials
+                            together. It is about planning carefully, building
+                            responsibly, and creating spaces that remain useful
+                            and valuable for years to come.
+                        </p>
+
+
+                        <!-- Precision Label -->
+
+                        <div
+                            class="mt-8 pt-6 border-t border-outline-variant/30"
+                        >
+
+                            <div
+                                class="flex items-center justify-center gap-3"
+                            >
+
+                                <span
+                                    class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                                ></span>
+
+                                <span
+                                    class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
+                                >
+                                    Precision in Craftsmanship
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     RIGHT CONTENT
+                     MOBILE: SECOND
+                     DESKTOP: RIGHT
+                ================================== -->
+
+                <div
+                    class="order-2 lg:order-2 space-y-8"
+                >
+
+
+                    <!-- =================================
+                         SECTION HEADING
+                    ================================== -->
 
                     <div class="space-y-4">
 
@@ -260,7 +439,10 @@
                     </div>
 
 
-                    <!-- Description -->
+
+                    <!-- =================================
+                         DESCRIPTION
+                    ================================== -->
 
                     <p
                         class="font-body-lg text-body-lg text-on-surface-variant"
@@ -432,398 +614,288 @@
 
                         </div>
 
+                    </div>
+
+
+
+                    <!-- =================================
+                         CTA BUTTONS
+                         UNDER RIGHT CONTENT
+                    ================================== -->
+
+                    <div
+                        class="flex flex-col sm:flex-row gap-4 pt-2"
+                    >
+
+                        <a
+                            href="./contact.html"
+                            class="inline-flex items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded-xl metallic-glow hover:opacity-90 transition-opacity"
+                        >
+                            Get Free Consultation
+                        </a>
+
+
+                        <a
+                            href="./projects.html"
+                            class="inline-flex items-center justify-center border border-outline-variant text-primary font-label-caps text-label-caps px-8 py-4 rounded-xl hover:border-primary hover:bg-primary/5 transition-all"
+                        >
+                            View Projects
+                        </a>
 
                     </div>
 
                 </div>
-
-
-
-                <!-- =================================
-                     RIGHT VISUAL PANEL
-                ================================== -->
-
-                <div
-                    class="relative bg-surface-container-high border border-outline-variant/30 rounded-3xl p-8 md:p-12 overflow-hidden min-h-[500px] lg:min-h-[650px] flex flex-col items-center justify-center"
-                >
-
-
-                    <!-- =================================
-                         AMBIENT COPPER GLOW
-                    ================================== -->
-
-                    <div
-                        class="absolute -top-20 -right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none"
-                    ></div>
-
-
-                    <div
-                        class="absolute -bottom-20 -left-20 w-72 h-72 bg-tertiary/10 rounded-full blur-3xl pointer-events-none"
-                    ></div>
-
-
-
-                    <!-- =================================
-                         ROTATING LOGO
-                    ================================== -->
-
-                    <div
-                        class="relative w-64 h-64 sm:w-[280px] sm:h-[280px] md:w-[360px] md:h-[360px] flex items-center justify-center mb-10"
-                    >
-
-
-                        <!-- Outer Ring -->
-
-                        <div
-                            class="absolute inset-0 rounded-full border border-primary/20 rr-logo-ring-slow"
-                        ></div>
-
-
-                        <!-- Dashed Ring -->
-
-                        <div
-                            class="absolute inset-[12%] rounded-full border border-primary/30 border-dashed rr-logo-ring-reverse"
-                        ></div>
-
-
-                        <!-- Inner Ring -->
-
-                        <div
-                            class="absolute inset-[23%] rounded-full border border-primary/10 rr-logo-ring-slow-fast"
-                        ></div>
-
-
-                        <!-- Logo Glow -->
-
-                        <div
-                            class="absolute w-[60%] h-[60%] rounded-full bg-primary/10 blur-3xl"
-                        ></div>
-
-
-
-                        <!-- =================================
-                             MAIN LOGO
-                        ================================== -->
-
-                        <div
-                            class="relative w-44 h-44 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-surface shadow-[0_0_80px_rgba(203,125,88,0.25)] z-10 group"
-                        >
-
-                            <img
-                                src="./assets/images/rr-infra-logo.webp"
-                                alt="RR Infra Homes Logo"
-                                class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
-                            >
-
-
-                            <!-- Logo Overlay -->
-
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent pointer-events-none"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- =================================
-                         VISUAL PANEL TEXT
-                    ================================== -->
-
-                    <div
-                        class="relative z-10 text-center max-w-xl"
-                    >
-
-
-                        <h3
-                            class="font-display-lg-mobile text-display-lg-mobile text-on-surface mb-6"
-                        >
-
-                            Every Detail
-
-                            <br>
-
-                            <span class="text-primary">
-                                Matters.
-                            </span>
-
-                        </h3>
-
-
-                        <p
-                            class="font-body-lg text-body-lg text-on-surface-variant"
-                        >
-                            Good construction is more than putting materials
-                            together. It is about planning carefully, building
-                            responsibly, and creating spaces that remain useful
-                            and valuable for years to come.
-                        </p>
-
-
-                        <!-- Precision Label -->
-
-                        <div
-                            class="mt-8 pt-6 border-t border-outline-variant/30"
-                        >
-
-                            <div
-                                class="flex items-center justify-center gap-3"
-                            >
-
-                                <span
-                                    class="w-2 h-2 rounded-full bg-primary animate-pulse"
-                                ></span>
-
-
-                                <span
-                                    class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
-                                >
-                                    Precision in Craftsmanship
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
 
             </div>
 
         </section>
 
-    
+
 
         <!-- ========================================
-         CTA + TRUST BADGES
-    ======================================== -->
-
-    <section
-        class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pb-section-gap"
-    >
-
-        <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 mb-16">
-
-            <a
-                href="./contact.html"
-                class="inline-flex items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded-xl metallic-glow hover:opacity-90 transition-opacity"
-            >
-                Get Free Consultation
-            </a>
-
-
-            <a
-                href="./projects.html"
-                class="inline-flex items-center justify-center border border-outline-variant text-primary font-label-caps text-label-caps px-8 py-4 rounded-xl hover:border-primary hover:bg-primary/5 transition-all"
-            >
-                View Projects
-            </a>
-
-        </div>
-
-
-        <!-- =================================
              TRUST BADGES
-        ================================== -->
+        ======================================== -->
 
-        <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-outline-variant/30 glass-panel p-6 rounded-xl"
+        <section
+            class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pb-section-gap"
         >
 
-            <!-- Experience -->
-            <div class="flex items-center gap-3">
 
-                <span
-                    class="material-symbols-outlined text-primary text-3xl"
-                >
-                    workspace_premium
-                </span>
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-outline-variant/30 glass-panel p-6 rounded-xl"
+            >
 
-                <span
-                    class="font-label-caps text-label-caps text-on-surface"
-                >
-                    6+ Years Experience
-                </span>
+
+                <!-- =============================
+                     EXPERIENCE
+                ============================== -->
+
+                <div class="flex items-center gap-3">
+
+                    <span
+                        class="material-symbols-outlined text-primary text-3xl"
+                    >
+                        workspace_premium
+                    </span>
+
+                    <span
+                        class="font-label-caps text-label-caps text-on-surface"
+                    >
+                        6+ Years Experience
+                    </span>
+
+                </div>
+
+
+
+                <!-- =============================
+                     PROPERTY TYPES
+                ============================== -->
+
+                <div class="flex items-center gap-3">
+
+                    <span
+                        class="material-symbols-outlined text-primary text-3xl"
+                    >
+                        architecture
+                    </span>
+
+                    <span
+                        class="font-label-caps text-label-caps text-on-surface"
+                    >
+                        Residential &amp; Commercial
+                    </span>
+
+                </div>
+
+
+
+                <!-- =============================
+                     LOCATION
+                ============================== -->
+
+                <div class="flex items-center gap-3">
+
+                    <span
+                        class="material-symbols-outlined text-primary text-3xl"
+                    >
+                        location_on
+                    </span>
+
+                    <span
+                        class="font-label-caps text-label-caps text-on-surface"
+                    >
+                        Serving All Over Coimbatore
+                    </span>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <!-- Property Types -->
-            <div class="flex items-center gap-3">
-
-                <span
-                    class="material-symbols-outlined text-primary text-3xl"
-                >
-                    architecture
-                </span>
-
-                <span
-                    class="font-label-caps text-label-caps text-on-surface"
-                >
-                    Residential &amp; Commercial
-                </span>
-
-            </div>
-
-
-            <!-- Location -->
-            <div class="flex items-center gap-3">
-
-                <span
-                    class="material-symbols-outlined text-primary text-3xl"
-                >
-                    location_on
-                </span>
-
-                <span
-                    class="font-label-caps text-label-caps text-on-surface"
-                >
-                    Serving All Over Coimbatore
-                </span>
-
-            </div>
-
-        </div>
-
-    </section>
     </main>
 
 
 
-   <!-- ========================================
-     FOOTER
-======================================== -->
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
 
-<footer
-    class="w-full mt-section-gap bg-surface-container-lowest rounded-t-xl border-t border-outline-variant overflow-hidden"
->
-
-    <div
-        class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-gutter px-6 sm:px-margin-mobile md:px-margin-desktop py-12 md:py-section-gap max-w-container-max mx-auto"
+    <footer
+        class="w-full mt-section-gap bg-surface-container-lowest rounded-t-xl border-t border-outline-variant overflow-hidden"
     >
 
-        <!-- Brand -->
-        <div class="min-w-0 space-y-4 md:space-y-6">
+        <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-gutter px-6 sm:px-margin-mobile md:px-margin-desktop py-12 md:py-section-gap max-w-container-max mx-auto"
+        >
+
+
+            <!-- =============================
+                 BRAND
+            ============================== -->
 
             <div
-                class="font-headline-lg text-headline-lg font-bold text-primary"
+                class="min-w-0 space-y-4 md:space-y-6"
             >
-                RR Infra Homes
+
+                <div
+                    class="font-headline-lg text-headline-lg font-bold text-primary"
+                >
+                    RR Infra Homes
+                </div>
+
+                <p
+                    class="text-on-surface-variant text-body-md leading-relaxed max-w-sm"
+                >
+                    Precision in Craftsmanship. Building quality spaces
+                    with trust, excellence, and attention to detail.
+                </p>
+
             </div>
 
-            <p
-                class="text-on-surface-variant text-body-md leading-relaxed max-w-sm"
+
+
+            <!-- =============================
+                 QUICK LINKS
+            ============================== -->
+
+            <div
+                class="min-w-0 flex flex-col gap-3"
             >
-                Precision in Craftsmanship. Building quality spaces
-                with trust, excellence, and attention to detail.
-            </p>
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Quick Links
+                </h4>
+
+
+                <a
+                    href="./index.html"
+                    class="footer-link w-fit"
+                >
+                    Home
+                </a>
+
+
+                <a
+                    href="./about.html"
+                    class="footer-link w-fit"
+                >
+                    About
+                </a>
+
+
+                <a
+                    href="./services.html"
+                    class="footer-link text-primary w-fit"
+                >
+                    Services
+                </a>
+
+
+                <a
+                    href="./projects.html"
+                    class="footer-link w-fit"
+                >
+                    Projects
+                </a>
+
+
+                <a
+                    href="./contact.html"
+                    class="footer-link w-fit"
+                >
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <!-- =============================
+                 CONTACT
+            ============================== -->
+
+            <div
+                class="min-w-0 flex flex-col gap-3"
+            >
+
+                <h4
+                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+                >
+                    Contact
+                </h4>
+
+
+                <a
+                    href="mailto:rrinfrahome@gmail.com"
+                    class="footer-link break-all max-w-full"
+                >
+                    rrinfrahome@gmail.com
+                </a>
+
+
+                <a
+                    href="tel:+918344466686"
+                    class="footer-link w-fit"
+                >
+                    +91 83444 66686
+                </a>
+
+
+                <p
+                    class="text-on-surface-variant font-body-md leading-relaxed max-w-sm break-words"
+                >
+                    105 Jaikarannagar, Mullainagar,
+                    Podanur Post, Coimbatore-641023
+                </p>
+
+            </div>
 
         </div>
 
 
-        <!-- Quick Links -->
-        <div class="min-w-0 flex flex-col gap-3">
 
-            <h4
-                class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
-            >
-                Quick Links
-            </h4>
+        <!-- =============================
+             COPYRIGHT
+        ============================== -->
 
-            <a
-                href="./index.html"
-                class="footer-link w-fit"
-            >
-                Home
-            </a>
-
-            <a
-                href="./about.html"
-                class="footer-link w-fit"
-            >
-                About
-            </a>
-
-            <a
-                href="./services.html"
-                class="footer-link text-primary w-fit"
-            >
-                Services
-            </a>
-
-            <a
-                href="./projects.html"
-                class="footer-link w-fit"
-            >
-                Projects
-            </a>
-
-            <a
-                href="./contact.html"
-                class="footer-link w-fit"
-            >
-                Contact
-            </a>
-
-        </div>
-
-
-        <!-- Contact -->
-        <div class="min-w-0 flex flex-col gap-3">
-
-            <h4
-                class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
-            >
-                Contact
-            </h4>
-
-            <a
-                href="mailto:rrinfrahome@gmail.com"
-                class="footer-link break-all max-w-full"
-            >
-                rrinfrahome@gmail.com
-            </a>
-
-            <a
-                href="tel:+918344466686"
-                class="footer-link w-fit"
-            >
-                +91 83444 66686
-            </a>
-
-            <p
-                class="text-on-surface-variant font-body-md leading-relaxed max-w-sm break-words"
-            >
-                105 Jaikarannagar, Mullainagar,
-                Podanur Post, Coimbatore-641023
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- Copyright -->
-    <div
-        class="border-t border-outline-variant/30 px-6 sm:px-margin-mobile md:px-margin-desktop py-5 md:py-6"
-    >
-
-        <p
-            class="text-on-surface-variant font-body-md opacity-80 text-center leading-relaxed break-words"
+        <div
+            class="border-t border-outline-variant/30 px-6 sm:px-margin-mobile md:px-margin-desktop py-5 md:py-6"
         >
-            © 2026 RR Infra Homes. Precision in Craftsmanship.
-            All rights reserved.
-        </p>
 
-    </div>
+            <p
+                class="text-on-surface-variant font-body-md opacity-80 text-center leading-relaxed break-words"
+            >
+                © 2026 RR Infra Homes. Precision in Craftsmanship.
+                All rights reserved.
+            </p>
 
-</footer>
+        </div>
 
+    </footer>
 
 
 
@@ -836,5 +908,3 @@
 </body>
 
 </html>
-
-<!-- Deployment test -->
