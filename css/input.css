@@ -384,9 +384,17 @@ span {
 }
 
 .rr-brand:hover .rr-infra {
-    color: #FFFFFF;
+    color: #8c8e8f;
 }
 
+.rr-brand-text:hover .rr-logo,
+.rr-brand-text:hover .rr-homes {
+    color: #B76545;
+}
+
+.rr-brand-text:hover .rr-infra {
+    color: #8c8e8f !important;
+}
 
 /* ========================================
    MOBILE BRAND
@@ -418,7 +426,7 @@ span {
 
 
     .rr-infra {
-        color: #FFFFFF;
+        color: #8c8e8f;
     }
 
 
