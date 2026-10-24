@@ -24,6 +24,9 @@
         rel="stylesheet"
     >
 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
     <!-- ================================
          MATERIAL SYMBOLS
@@ -61,9 +64,7 @@
         class="fixed top-0 z-50 w-full bg-surface/60 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_20px_50px_rgba(253,182,151,0.1)] transition-all duration-300"
     >
 
-        <div
-            class="flex items-center justify-between px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
-        >
+        <div class="navbar-container flex items-center justify-between gap-4 px-4 lg:px-6 xl:px-margin-desktop py-4 max-w-container-max mx-auto">
 
 
             <!-- ================================
@@ -96,13 +97,13 @@
             ================================== -->
 
             <nav
-                class="hidden md:flex items-center gap-8"
-                aria-label="Main navigation"
-            >
+    class="desktop-navigation hidden items-center gap-3 xl:gap-6 shrink-0"
+    aria-label="Main navigation"
+>
 
                 <a
                     href="./index.html"
-                    class="nav-link"
+                     class="nav-link text-primary border-b-2 border-primary pb-1"
                     aria-current="page"
                 >
                     HOME
@@ -145,11 +146,11 @@
             ================================== -->
 
             <a
-                href="./contact.html"
-                class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
-            >
-                Request a Quote
-            </a>
+    href="./contact.html"
+    class="desktop-quote hidden shrink-0 whitespace-nowrap bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-3 xl:px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
+>
+    REQUEST A QUOTE
+</a>
 
 
 
@@ -158,19 +159,17 @@
             ================================== -->
 
             <button
-                id="mobile-menu-button"
-                type="button"
-                class="md:hidden text-primary"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="mobile-menu"
-            >
-
-                <span class="material-symbols-outlined text-3xl">
-                    menu
-                </span>
-
-            </button>
+    id="mobile-menu-button"
+    type="button"
+    class="text-primary"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+>
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
 
         </div>
 
@@ -182,7 +181,7 @@
 
         <nav
             id="mobile-menu"
-            class="hidden md:hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
+            class="hidden min-[900px]:hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
             aria-label="Mobile navigation"
         >
 
@@ -835,47 +834,75 @@
 
 
 
-            <!-- =============================
-                 CONTACT
-            ============================== -->
+            
+<!-- =============================
+     CONTACT
+============================== -->
 
-            <div
-                class="min-w-0 flex flex-col gap-3"
-            >
+<div class="min-w-0 flex flex-col gap-3">
 
-                <h4
-                    class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
-                >
-                    Contact
-                </h4>
+    <h4
+        class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+    >
+        Contact
+    </h4>
 
+    <!-- Email -->
+    <a
+        href="mailto:rrinfrahome@gmail.com"
+        class="footer-link break-all max-w-full flex items-center gap-3"
+    >
+        <i class="fa-solid fa-envelope text-lg"></i>
+        <span>rrinfrahome@gmail.com</span>
+    </a>
 
-                <a
-                    href="mailto:rrinfrahome@gmail.com"
-                    class="footer-link break-all max-w-full"
-                >
-                    rrinfrahome@gmail.com
-                </a>
+    <!-- Phone -->
+    <a
+        href="tel:+918344466686"
+        class="footer-link w-fit flex items-center gap-3"
+    >
+        <i class="fa-solid fa-phone text-lg"></i>
+        <span>+91 83444 66686</span>
+    </a>
 
+    <!-- Instagram -->
+    <a
+        href="https://www.instagram.com/rrinfrahomes?exln=amJua2hjcTc2c2E0"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-link w-fit flex items-center gap-3"
+        aria-label="Visit our Instagram"
+    >
+        <i class="fa-brands fa-instagram text-xl"></i>
+        <span>Instagram</span>
+    </a>
 
-                <a
-                    href="tel:+918344466686"
-                    class="footer-link w-fit"
-                >
-                    +91 83444 66686
-                </a>
+    <!-- WhatsApp -->
+    <a
+        href="https://wa.me/918344466686"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-link w-fit flex items-center gap-3"
+        aria-label="Chat with us on WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+        <span>WhatsApp</span>
+    </a>
 
+    <!-- Address -->
+    <p
+        class="text-on-surface-variant font-body-md leading-relaxed max-w-sm break-words flex items-start gap-3"
+    >
+        <i class="fa-solid fa-location-dot text-lg mt-4"></i>
+        <span>
+            105 Jaikarannagar, Mullainagar,
+            Podanur Post, Coimbatore-641023
+        </span>
+    </p>
 
-                <p
-                    class="text-on-surface-variant font-body-md leading-relaxed max-w-sm break-words"
-                >
-                    105 Jaikarannagar, Mullainagar,
-                    Podanur Post, Coimbatore-641023
-                </p>
+</div>
+</div>
 
-            </div>
-
-        </div>
 
 
 

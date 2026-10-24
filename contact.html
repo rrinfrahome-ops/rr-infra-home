@@ -12,6 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
         rel="stylesheet"
     >
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
     <!-- Material Symbols -->
     <link
@@ -61,8 +64,8 @@
 
             <!-- Desktop Navigation -->
             <nav
-                class="hidden md:flex items-center gap-8"
-                aria-label="Main navigation"
+    class="desktop-navigation hidden items-center gap-3 xl:gap-6 shrink-0"
+    aria-label="Main navigation"
             >
 
                 <a
@@ -107,9 +110,9 @@
 
             <!-- Request Quote -->
             <a
-                href="./contact.html"
-                class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
-            >
+    href="./contact.html"
+    class="desktop-quote hidden shrink-0 whitespace-nowrap bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-label-caps text-label-caps px-3 xl:px-6 py-3 rounded-xl metallic-glow hover:scale-95 transition-transform"
+>
                 REQUEST A QUOTE
             </a>
 
@@ -118,26 +121,25 @@
             <button
     id="mobile-menu-button"
     type="button"
-    class="md:hidden text-primary p-2"
+    class="text-primary"
     aria-label="Open navigation menu"
     aria-expanded="false"
-    aria-controls="mobile-menu">
-
-                <span class="material-symbols-outlined text-3xl">
-                    menu
-                </span>
-
-            </button>
+    aria-controls="mobile-menu"
+>
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
 
         </div>
 
 
         <!-- Mobile Navigation -->
         <nav
-            id="mobile-menu"
-            class="hidden md:hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
-            aria-label="Mobile navigation"
-        >
+    id="mobile-menu"
+    class="hidden bg-surface border-t border-outline-variant/30 px-margin-mobile py-6"
+    aria-label="Mobile navigation"
+>
 
             <div class="flex flex-col gap-5">
 
@@ -322,75 +324,69 @@
 
 
                         <!-- Phone -->
-                        <div
-                            class="flex flex-col items-center text-center gap-4"
-                        >
+<div class="flex flex-col items-center text-center gap-4">
 
-                            <div
-                                class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/50"
-                            >
+    <div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/50">
+        <span class="material-symbols-outlined text-primary">
+            phone_in_talk
+        </span>
+    </div>
 
-                                <span class="material-symbols-outlined text-primary">
-                                    phone_in_talk
-                                </span>
+    <div class="w-full min-w-0">
+        <p class="font-label-caps text-label-caps text-primary mb-2 uppercase">
+            Phone
+        </p>
 
-                            </div>
+        <a href="tel:+918344466686"
+           class="text-on-surface-variant hover:text-primary transition-colors">
+            +91 83444 66686
+        </a>
 
+        <div class="mt-4">
+            <a href="https://wa.me/918344466686"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-3 text-on-surface-variant hover:text-primary transition-colors">
+                <i class="fa-brands fa-whatsapp text-3xl"></i>
+                <span class="text-lg font-semibold">WhatsApp</span>
+            </a>
+        </div>
+    </div>
 
-                            <div>
-
-                                <p
-                                    class="font-label-caps text-label-caps text-primary mb-2 uppercase"
-                                >
-                                    Phone
-                                </p>
-
-                                <a
-                                    href="tel:+918344466686"
-                                    class="text-on-surface-variant hover:text-primary transition-colors"
-                                >
-                                    +91 83444 66686
-                                </a>
-
-                            </div>
-
-                        </div>
+</div>
 
 
                         <!-- Email -->
-                        <div
-                            class="flex flex-col items-center text-center gap-4"
-                        >
+<div class="flex flex-col items-center text-center gap-4">
 
-                            <div
-                                class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/50"
-                            >
+    <div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/50">
+        <span class="material-symbols-outlined text-primary">
+            mail
+        </span>
+    </div>
 
-                                <span class="material-symbols-outlined text-primary">
-                                    mail
-                                </span>
+    <div class="w-full min-w-0">
+        <p class="font-label-caps text-label-caps text-primary mb-2 uppercase">
+            Email
+        </p>
 
-                            </div>
+        <a href="mailto:rrinfrahome@gmail.com"
+           class="text-on-surface-variant hover:text-primary transition-colors break-all">
+            rrinfrahome@gmail.com
+        </a>
 
+        <div class="mt-4">
+            <a href="https://www.instagram.com/rrinfrahomes?exln=amJua2hjcTc2c2E0"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-3 text-on-surface-variant hover:text-primary transition-colors">
+                <i class="fa-brands fa-instagram text-3xl"></i>
+                <span class="text-lg font-semibold">Instagram</span>
+            </a>
+        </div>
+    </div>
 
-                            <div>
-
-                                <p
-                                    class="font-label-caps text-label-caps text-primary mb-2 uppercase"
-                                >
-                                    Email
-                                </p>
-
-                                <a
-                                    href="mailto:rrinfrahome@gmail.com"
-                                    class="text-on-surface-variant hover:text-primary transition-colors break-all"
-                                >
-                                    rrinfrahome@gmail.com
-                                </a>
-
-                            </div>
-
-                        </div>
+</div>
 
 
                         <!-- Hours -->
@@ -626,56 +622,96 @@
         </div>
 
 
-        <!-- Contact -->
-        <div class="min-w-0 flex flex-col gap-3">
+        <!-- =============================
+     CONTACT
+============================== -->
 
-            <h4
-                class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
-            >
-                Contact
-            </h4>
+<div class="min-w-0 flex flex-col gap-3">
 
-            <a
-                href="mailto:rrinfrahome@gmail.com"
-                class="footer-link break-all max-w-full"
-            >
-                rrinfrahome@gmail.com
-            </a>
+    <h4
+        class="font-label-caps text-label-caps text-primary uppercase tracking-wider mb-2"
+    >
+        Contact
+    </h4>
 
-            <a
-                href="tel:+918344466686"
-                class="footer-link w-fit"
-            >
-                +91 83444 66686
-            </a>
+    <!-- Email -->
+    <a
+        href="mailto:rrinfrahome@gmail.com"
+        class="footer-link break-all max-w-full flex items-center gap-3"
+    >
+        <i class="fa-solid fa-envelope text-lg"></i>
+        <span>rrinfrahome@gmail.com</span>
+    </a>
+
+    <!-- Phone -->
+    <a
+        href="tel:+918344466686"
+        class="footer-link w-fit flex items-center gap-3"
+    >
+        <i class="fa-solid fa-phone text-lg"></i>
+        <span>+91 83444 66686</span>
+    </a>
+
+    <!-- Instagram -->
+    <a
+        href="https://www.instagram.com/rrinfrahomes?exln=amJua2hjcTc2c2E0"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-link w-fit flex items-center gap-3"
+        aria-label="Visit our Instagram"
+    >
+        <i class="fa-brands fa-instagram text-xl"></i>
+        <span>Instagram</span>
+    </a>
+
+    <!-- WhatsApp -->
+    <a
+        href="https://wa.me/918344466686"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-link w-fit flex items-center gap-3"
+        aria-label="Chat with us on WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- Address -->
+    <p
+        class="text-on-surface-variant font-body-md leading-relaxed max-w-sm break-words flex items-start gap-3"
+    >
+        <i class="fa-solid fa-location-dot text-lg mt-4"></i>
+        <span>
+            105 Jaikarannagar, Mullainagar,
+            Podanur Post, Coimbatore-641023
+        </span>
+    </p>
+
+</div>
+</div>
+
+
+
+
+        <!-- =============================
+             COPYRIGHT
+        ============================== -->
+
+        <div
+            class="border-t border-outline-variant/30 px-6 sm:px-margin-mobile md:px-margin-desktop py-5 md:py-6"
+        >
 
             <p
-                class="text-on-surface-variant font-body-md leading-relaxed max-w-sm break-words"
+                class="text-on-surface-variant font-body-md opacity-80 text-center leading-relaxed break-words"
             >
-                105 Jaikarannagar, Mullainagar,
-                Podanur Post, Coimbatore-641023
+                © 2026 RR Infra Homes. Precision in Craftsmanship.
+                All rights reserved.
             </p>
 
         </div>
 
-    </div>
+    </footer>
 
-
-    <!-- Copyright -->
-    <div
-        class="border-t border-outline-variant/30 px-6 sm:px-margin-mobile md:px-margin-desktop py-5 md:py-6"
-    >
-
-        <p
-            class="text-on-surface-variant font-body-md opacity-80 text-center leading-relaxed break-words"
-        >
-            © 2026 RR Infra Homes. Precision in Craftsmanship.
-            All rights reserved.
-        </p>
-
-    </div>
-
-</footer>
 
 
 
